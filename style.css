@@ -19,12 +19,8 @@
   height: 49px;
 }
 
-.nav-item {
-  margin: 0.32em;
-}
-
 .navbar {
-  background-color: var(--yellow-color) !important;
+  background-color: var(--blue-color) !important;
   font-family: "Inter", sans-serif;
   font-size: 12px;
 }
@@ -45,7 +41,7 @@
   width: 61px;
   height: 38px;
   border-radius: 0 0 0 0;
-  margin-right: 24rem !important;
+  margin-right: 1rem !important;
 }
 
 .submit-btn:hover {
@@ -54,10 +50,14 @@
 }
 
 .form-control {
-  width: 472px;
+  width: 250px;
   height: 39px;
   border-radius: 0 0 0 0;
   outline: 1px solid black !important;
+}
+
+.form-control::placeholder {
+  font-size: 14px;
 }
 
 .form-control:focus {

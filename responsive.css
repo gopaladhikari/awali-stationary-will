@@ -19,15 +19,62 @@
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .logo {
-    width: 279px;
+    width: 265px;
     height: 49px;
+  }
+
+  .navbar {
+    background-color: var(--red-color) !important;
   }
 }
 
 /*  X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .form-control {
+    width: 350px;
+  }
+
+  .submit-btn {
+    margin-right: 4rem !important;
+  }
+  .nav-item {
+    margin: 0.32em;
+  }
 }
 
 /*  XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
+  .navbar {
+    background-color: var(--yellow-color) !important;
+  }
+  .form-control {
+    width: 450px;
+  }
+  .submit-btn {
+    margin-right: 10rem !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .submit-btn {
+    margin-right: 18rem !important;
+  }
+}
+
+@media (min-width: 1700px) {
+  .submit-btn {
+    margin-right: 26rem !important;
+  }
+}
+
+@media (min-width: 1800px) {
+  .submit-btn {
+    margin-right: 35rem !important;
+  }
+}
+
+@media (min-width: 1900px) {
+  .submit-btn {
+    margin-right: 38rem !important;
+  }
 }
