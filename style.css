@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"); /* Montserrat   */
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap"); /* Inter */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --yellow-color: #f0d028;
+  --red-color: #f02828;
+  --blue-color: #0071dc;
+  --black-color: #000000;
+}
+
+.logo {
+  width: 200px;
+  height: 49px;
+}
+
+.nav-item {
+  margin: 0.32em;
+}
+
+.navbar {
+  background-color: var(--yellow-color) !important;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler-icon:active {
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+
+.submit-btn {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  background-color: var(--black-color);
+  color: white;
+  width: 61px;
+  height: 38px;
+  border-radius: 0 0 0 0;
+  margin-right: 24rem !important;
+}
+
+.submit-btn:hover {
+  background-color: var(--black-color);
+  color: white;
+}
+
+.form-control {
+  width: 472px;
+  height: 39px;
+  border-radius: 0 0 0 0;
+  outline: 1px solid black !important;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+.dropdown-toggle {
+  width: 124px;
+  height: 32px;
+  background-color: white;
+  text-align: center;
+}
+
+.white-circle {
+  margin-top: -13px;
+  margin-left: -10px;
+}
