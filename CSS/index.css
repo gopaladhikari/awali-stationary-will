@@ -39,6 +39,10 @@ body {
   background-color: var(--white-color);
 }
 
+.row {
+  max-width: 1520px;
+}
+
 /* ---------------------------------------------------Navbar Style--------------------------------------------------- */
 
 .logo {
@@ -113,6 +117,7 @@ body {
   color: white;
   padding: 0.87em 1em;
   border-radius: 0.7em;
+  /* margin-left: 13%; */
 }
 
 .customer-service {
@@ -123,15 +128,16 @@ body {
   top: 3em;
 }
 
-.category-list {
-  margin-left: -15rem;
-}
-
 .category-list li {
   list-style-type: none;
   margin-top: 1.2em;
   font-size: 12px;
   font-weight: 600;
+}
+
+.category-list li a {
+  color: black;
+  text-decoration: none;
 }
 
 .contact {
@@ -147,10 +153,11 @@ body {
 
 /* ---------------------------------------------------Hero SectionStyle --------------------------------------------------- */
 .hero-sec {
+  width: 1520px;
   background-image: url(../Images/homepage-banner.png);
   background-repeat: no-repeat;
+  background-size: cover;
   height: 414px;
-  width: 1185px;
   border-radius: 22px;
 }
 
@@ -183,18 +190,27 @@ body {
 }
 /* ---------------------------------------------------Catalog Style Ends--------------------------------------------------- */
 
+/* ---------------------------------------------------Menu --------------------------------------------------- */
+.menu img {
+  width: 120px;
+  margin: 0 0.8em;
+}
+/* ---------------------------------------------------Menu Ends--------------------------------------------------- */
+
 /* ---------------------------------------------------Office and School--------------------------------------------------- */
 
 .school {
   background: url(../Images/school.png);
+  background-size: cover;
+  max-width: 700px;
   height: 335px;
-  width: 573px;
 }
 
 .office {
   background: url(../Images/office.png);
+  background-size: cover;
   height: 335px;
-  width: 573px;
+  max-width: 700px;
 }
 
 .office-btn {
@@ -248,7 +264,19 @@ body {
   width: 10rem;
   margin-top: 0.5rem;
 }
+
+.catalog .col-md-2 {
+  margin-right: 1rem;
+}
+
 /* ---------------------------------------------------Catalog Style Ends--------------------------------------------------- */
+
+/* ---------------------------------------------------Deals of the week --------------------------------------------------- */
+.deals-pic {
+  margin-left: -10rem;
+}
+/* --------------------------------------------------Deals of the week Ends--------------------------------------------------- */
+
 /* ---------------------------------------------------Image Overlay--------------------------------------------------- */
 .img-overlay {
   background: linear-gradient(

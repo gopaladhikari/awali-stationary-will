@@ -60,7 +60,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/Pages/wishlist.html">
                   <span><img src="./Images/heart.png" alt="" /></span>
                   <span
                     ><img
@@ -72,7 +72,11 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a
+                  class="nav-link"
+                  href="/Pages/yourcart.html
+                "
+                >
                   <span><img src="./Images/cart.png" alt="" /></span>
                   <span
                     ><img
@@ -84,7 +88,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="/login.html">
                   <span><img src="./Images/login.png" alt="" /></span> Login</a
                 >
               </li>
@@ -96,18 +100,21 @@
     <!-- Navbar  Ends -->
 
     <!-- Category  -->
-    <div class="container pt-2">
-      <div class="row">
-        <div class="col-12 d-flex align-items-center justify-content-around">
+    <div class="container-fluid pt-2">
+      <div class="row mx-auto">
+        <div
+          class="col-12 d-flex align-items-center justify-content-between mx-auto"
+        >
           <button class="category-btn">
             <img src="./Images/menu.png" class="me-2" alt="" /> Category
             <img src="./Images/downArrow.png" class="ms-2" alt="" />
           </button>
-          <ul class="d-flex gap-3 gap-lg-5 category-list">
-            <li>HOME</li>
-            <li>NOVELTY</li>
-            <li>CHNCELLERY</li>
-            <li>DISCOUNT</li>
+          <ul class="d-flex gap-3 gap-lg-4 category-list">
+            <li><a href=""> HOME </a></li>
+            <li><a href=""> NOVELTY </a></li>
+            <li><a href=""> CHNCELLERY </a></li>
+            <li><a href=""> DISCOUNT </a></li>
+            <li><a href=""> CONTACT US </a></li>
           </ul>
           <h2 class="contact">
             <img src="./Images/contact.png" /> +73 7278 72 1123 <br /><span
@@ -122,9 +129,9 @@
     <!-- Category Ends -->
 
     <!-- Banner  -->
-    <div class="container">
-      <div class="row">
-        <div class="col-12 hero-sec">
+    <div class="container-fluid">
+      <div class="row mx-auto">
+        <div class="col-12 hero-sec mx-auto">
           <h1 class="clerical">Clerical GOODS</h1>
           <p class="hurry-up">hurry up</p>
           <button class="read-more">Read More</button>
@@ -134,62 +141,22 @@
     <!-- Banner  Ends -->
 
     <!-- Menu -->
-    <div class="container mt-4">
+    <div class="container-fluid mt-4">
       <div class="row mx-auto">
         <div class="col-12 mx-auto">
-          <div class="card-menu">
+          <div class="card-menu menu">
             <h1 class="my-4">Menu</h1>
             <div class="card-images">
-              <img
-                src="./Images/menu1.png"
-                class="img-fluid me-3"
-                alt="Image 1"
-              />
-              <img
-                src="./Images/menu2.png"
-                class="img-fluid me-3"
-                alt="Image 2"
-              />
-              <img
-                src="./Images/menu3.png"
-                class="img-fluid me-3"
-                alt="Image 3"
-              />
-              <img
-                src="./Images/menu4.png"
-                class="img-fluid me-3"
-                alt="Image 4"
-              />
-              <img
-                src="./Images/menu5.png"
-                class="img-fluid me-3"
-                alt="Image 5"
-              />
-              <img
-                src="./Images/menu6.png"
-                class="img-fluid me-3"
-                alt="Image 6"
-              />
-              <img
-                src="./Images/menu7.png"
-                class="img-fluid me-3"
-                alt="Image 7"
-              />
-              <img
-                src="./Images/menu8.png"
-                class="img-fluid me-3"
-                alt="Image 8"
-              />
-              <img
-                src="./Images/menu9.png"
-                class="img-fluid me-3"
-                alt="Image 9"
-              />
-              <img
-                src="./Images/menu10.png"
-                class="img-fluid me-3"
-                alt="Image 10"
-              />
+              <img src="./Images/menu1.png" class="img-fluid" alt="Image 1" />
+              <img src="./Images/menu2.png" class="img-fluid" alt="Image 2" />
+              <img src="./Images/menu3.png" class="img-fluid" alt="Image 3" />
+              <img src="./Images/menu4.png" class="img-fluid" alt="Image 4" />
+              <img src="./Images/menu5.png" class="img-fluid" alt="Image 5" />
+              <img src="./Images/menu6.png" class="img-fluid" alt="Image 6" />
+              <img src="./Images/menu7.png" class="img-fluid" alt="Image 7" />
+              <img src="./Images/menu8.png" class="img-fluid" alt="Image 8" />
+              <img src="./Images/menu9.png" class="img-fluid" alt="Image 9" />
+              <img src="./Images/menu10.png" class="img-fluid" alt="Image 10" />
             </div>
           </div>
         </div>
@@ -198,9 +165,9 @@
     <!-- Menu Ends -->
 
     <!-- Office and School  -->
-    <div class="container">
+    <div class="container-fluid mt-4">
       <div class="row mx-auto">
-        <div class="col-lg-6 office mt-4 me-4 me-lg-5">
+        <div class="col-lg-6 office mb-3">
           <div>
             <button class="office-btn">OFFICE</button>
           </div>
@@ -210,7 +177,7 @@
             </button>
           </div>
         </div>
-        <div class="col-lg-6 school mt-4">
+        <div class="col-lg-6 school mx-auto">
           <div>
             <button class="office-btn">SCHOOL</button>
           </div>
@@ -225,10 +192,10 @@
     <!-- Office and School Ends -->
 
     <!-- Catalog  -->
-    <div class="container my-4 my-lg-5 catalog">
-      <div class="row">
+    <div class="container-fluid catalog">
+      <div class="row mx-auto">
         <h1>CATALOG</h1>
-        <div class="col-6 col-md-2 me-lg-4 me-0">
+        <div class="col-6 col-md-2">
           <div class="card">
             <img src="./Images/catalog1.png" class="card-img-top" alt="..." />
             <div class="card-body">
@@ -240,7 +207,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-2 me-lg-4 me-0">
+        <div class="col-6 col-md-2 mx-auto">
           <div class="card">
             <img src="./Images/catalog2.png" class="card-img-top" alt="..." />
             <div class="card-body">
@@ -252,7 +219,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-2 me-lg-4 me-0">
+        <div class="col-6 col-md-2 mx-auto">
           <div class="card">
             <img src="./Images/catalog2.png" class="card-img-top" alt="..." />
             <div class="card-body">
@@ -264,7 +231,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-2 me-lg-4 me-0">
+        <div class="col-6 col-md-2 mx-auto">
           <div class="card">
             <img src="./Images/catalog2.png" class="card-img-top" alt="..." />
             <div class="card-body">
@@ -276,43 +243,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-2 me-lg-4 me-0">
-          <div class="card">
-            <img src="./Images/catalog2.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title p-0">Clerical GOODS</h5>
-              <p class="card-text p-0">10.00$</p>
-              <button class="add-btn text-center">
-                <img src="./Images/cart.png" class="me-3" alt="" /> Add
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-2 me-lg-4 me-0">
-          <div class="card">
-            <img src="./Images/catalog3.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title p-0">Clerical GOODS</h5>
-              <p class="card-text p-0">10.00$</p>
-              <button class="add-btn text-center">
-                <img src="./Images/cart.png" class="me-3" alt="" /> Add
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-2 me-lg-4 me-0">
-          <div class="card">
-            <img src="./Images/catalog4.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title p-0">Clerical GOODS</h5>
-              <p class="card-text p-0">10.00$</p>
-              <button class="add-btn text-center">
-                <img src="./Images/cart.png" class="me-3" alt="" /> Add
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-2 me-lg-4 me-0">
+        <div class="col-6 col-md-2 mx-auto">
           <div class="card">
             <img src="./Images/catalog5.png" class="card-img-top" alt="..." />
             <div class="card-body">
@@ -324,7 +255,48 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-2 me-lg-4 me-0">
+      </div>
+    </div>
+
+    <div class="container-fluid catalog">
+      <div class="row mx-auto">
+        <div class="col-6 col-md-2">
+          <div class="card">
+            <img src="./Images/catalog3.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title p-0">Clerical GOODS</h5>
+              <p class="card-text p-0">10.00$</p>
+              <button class="add-btn text-center">
+                <img src="./Images/cart.png" class="me-3" alt="" /> Add
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mx-auto">
+          <div class="card">
+            <img src="./Images/catalog4.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title p-0">Clerical GOODS</h5>
+              <p class="card-text p-0">10.00$</p>
+              <button class="add-btn text-center">
+                <img src="./Images/cart.png" class="me-3" alt="" /> Add
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mx-auto">
+          <div class="card">
+            <img src="./Images/catalog5.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title p-0">Clerical GOODS</h5>
+              <p class="card-text p-0">10.00$</p>
+              <button class="add-btn text-center">
+                <img src="./Images/cart.png" class="me-3" alt="" /> Add
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mx-auto">
           <div class="card">
             <img src="./Images/catalog6.png" class="card-img-top" alt="..." />
             <div class="card-body">
@@ -336,7 +308,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-2 me-lg-4 me-0">
+        <div class="col-6 col-md-2 mx-auto">
           <div class="card">
             <img src="./Images/catalog7.png" class="card-img-top" alt="..." />
             <div class="card-body">
@@ -348,7 +320,12 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-2 me-lg-4 me-0">
+      </div>
+    </div>
+
+    <div class="container-fluid catalog">
+      <div class="row mx-auto">
+        <div class="col-6 col-md-2">
           <div class="card">
             <img src="./Images/catalog8.png" class="card-img-top" alt="..." />
             <div class="card-body">
@@ -360,7 +337,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-2 me-lg-4 me-0">
+        <div class="col-6 col-md-2 mx-auto">
           <div class="card">
             <img src="./Images/catalog9.png" class="card-img-top" alt="..." />
             <div class="card-body">
@@ -372,7 +349,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-2 me-lg-4 me-0">
+        <div class="col-6 col-md-2 mx-auto">
           <div class="card">
             <img src="./Images/catalog10.png" class="card-img-top" alt="..." />
             <div class="card-body">
@@ -384,7 +361,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 col-md-2 me-lg-4 me-0">
+        <div class="col-6 col-md-2 mx-auto">
           <div class="card">
             <img src="./Images/catalog11.png" class="card-img-top" alt="..." />
             <div class="card-body">
@@ -396,31 +373,26 @@
             </div>
           </div>
         </div>
+        <div class="col-6 col-md-2 mx-auto">
+          <div class="card"></div>
+        </div>
       </div>
     </div>
     <!-- Catalog Ends -->
 
     <!-- Deals Of The Week First section  -->
-    <div class="container my-4 my-lg-5 catalog">
-      <div class="row">
+    <div class="container-fluid my-4 my-lg-5 catalog">
+      <div class="row mx-auto">
         <h1>Deals Of The Week</h1>
 
-        <div class="col-12 deals-of-the-week1 col-md-2 me-lg-4">
+        <div class="col-12 deals-of-the-week1 col-md-2">
           <div class="card mx-auto">
-            <img
-              src="./Images/deals-of-the-week1.png"
-              class="card-img-top"
-              alt="..."
-            />
+            <img src="./Images/deals-of-the-week1.png" class="card-img-top" />
           </div>
         </div>
-        <div class="col-6 col-md-2 me-lg-4 me-0">
+        <div class="col-6 col-md-2 deals-pic">
           <div class="card">
-            <img
-              src="./Images/deals-of-the-week2.png"
-              class="card-img-top"
-              alt="..."
-            />
+            <img src="./Images/deals-of-the-week2.png" class="card-img-top" />
             <div class="card-body">
               <h5 class="card-title p-0">Clerical GOODS</h5>
               <p class="card-text p-0">10.00$</p>
@@ -431,7 +403,7 @@
           </div>
         </div>
 
-        <div class="col-6 col-md-2 me-lg-4 me-0">
+        <div class="col-6 col-md-2">
           <div class="card">
             <img
               src="./Images/deals-of-the-week3.png"
@@ -452,8 +424,8 @@
     <!-- Deals Of The Week First Section Ends -->
 
     <!-- Deals Of The Week Second section  -->
-    <div class="container my-4 my-lg-5 catalog">
-      <div class="row">
+    <div class="container-fluid my-4 my-lg-5 catalog">
+      <div class="row mx-auto">
         <h1>Deals Of The Week</h1>
 
         <div class="col-6 col-md-2 me-lg-4 me-0">
@@ -494,8 +466,8 @@
     <!-- Deals Of The Week Second Section Ends -->
 
     <!-- Image Overlay -->
-    <div class="container">
-      <div class="row">
+    <div class="container-fluid">
+      <div class="row mx-auto">
         <div class="col-12 img-overlay text-center pb-5 py-3">
           <img src="./Images/letter.png" class="img-fluid" alt="" />
           <h1 class="subscribe-for-the-news">SUBSCRIBE FOR THE NEWS</h1>

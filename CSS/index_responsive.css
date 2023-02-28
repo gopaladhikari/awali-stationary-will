@@ -1,3 +1,9 @@
+@media (max-width: 991px) {
+  .category-list {
+    display: none !important;
+  }
+}
+
 @media (max-width: 768px) {
   .navbar-nav {
     margin-top: 10px;
@@ -5,6 +11,12 @@
   .dropdown-menu {
     margin-left: 5px;
     margin-right: 5px;
+  }
+  .catalog .col-md-2 {
+    margin-right: 0em;
+  }
+  .deals-pic {
+    margin-left: 0rem;
   }
 }
 
@@ -51,6 +63,10 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .category-list {
+    margin-left: -15rem;
+  }
+
   .logo {
     width: 265px;
     height: 49px;
@@ -59,6 +75,13 @@
   .clerical {
     font-size: 56px !important;
     margin: 2.5rem 0 0 3.5rem;
+  }
+
+  .catalog .card {
+    width: 10rem;
+  }
+  .catalog .col-md-2 {
+    margin-right: 2rem;
   }
 
   .hurry-up {
@@ -73,10 +96,6 @@
     margin-left: 2.56rem;
   }
 
-  .catalog .card {
-    width: 10rem;
-  }
-
   .deals-of-the-week1 {
     margin-right: 23rem !important;
   }
@@ -89,12 +108,15 @@
 
 /*  X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .category-list {
+    margin-left: -30rem;
+  }
   .form-control {
     width: 350px;
   }
 
   .submit-btn {
-    margin-right: 4rem !important;
+    margin-right: 5rem !important;
   }
 
   .nav-item {
@@ -121,6 +143,9 @@
   .catalog .card {
     width: 13rem;
   }
+  .catalog .col-md-2 {
+    margin-right: 2rem;
+  }
 
   .deals-of-the-week1 img {
     width: 246px;
@@ -132,14 +157,12 @@
   }
 }
 
-@media (max-width: 1200px) {
-  .category-list {
-    display: none !important;
-  }
-}
-
 /*  XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
+  .category-list {
+    margin-left: -40rem;
+  }
+
   .form-control {
     width: 450px;
   }
@@ -147,7 +170,9 @@
   .submit-btn {
     margin-right: 10rem !important;
   }
-
+  .catalog .col-md-2 {
+    margin-right: 2.56rem;
+  }
   .clerical {
     font-size: 64px;
     margin: 4rem 0 0 2.5rem;
