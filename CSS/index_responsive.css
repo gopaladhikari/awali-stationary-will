@@ -38,6 +38,15 @@
   .catalog .card {
     width: 7rem;
   }
+
+  .deals-of-the-week1 {
+    margin-right: 15rem !important;
+  }
+
+  .deals-of-the-week1 img {
+    width: 200px;
+    height: 220px;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -66,6 +75,15 @@
 
   .catalog .card {
     width: 10rem;
+  }
+
+  .deals-of-the-week1 {
+    margin-right: 23rem !important;
+  }
+
+  .deals-of-the-week1 img {
+    width: 220px;
+    height: 240px;
   }
 }
 
@@ -103,6 +121,15 @@
   .catalog .card {
     width: 13rem;
   }
+
+  .deals-of-the-week1 img {
+    width: 246px;
+    height: 278px;
+  }
+
+  .deals-of-the-week1 {
+    margin-right: 25rem !important;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -133,6 +160,9 @@
 
   .read-more {
     margin: 3rem 0 0 2.5rem;
+  }
+  .deals-of-the-week1 {
+    margin-right: 35rem !important;
   }
 }
 

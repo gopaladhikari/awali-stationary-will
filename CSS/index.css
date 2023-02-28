@@ -147,7 +147,7 @@ body {
 
 /* ---------------------------------------------------Hero SectionStyle --------------------------------------------------- */
 .hero-sec {
-  background-image: url(./Images/homepage-banner.png);
+  background-image: url(../Images/homepage-banner.png);
   background-repeat: no-repeat;
   height: 414px;
   width: 1185px;
@@ -186,13 +186,13 @@ body {
 /* ---------------------------------------------------Office and School--------------------------------------------------- */
 
 .school {
-  background: url(./Images/school.png);
+  background: url(../Images/school.png);
   height: 335px;
   width: 573px;
 }
 
 .office {
-  background: url(./Images/office.png);
+  background: url(../Images/office.png);
   height: 335px;
   width: 573px;
 }
@@ -249,3 +249,7 @@ body {
   margin-top: 0.5rem;
 }
 /* ---------------------------------------------------Catalog Style Ends--------------------------------------------------- */
+
+/* ---------------------------------------------------Deals Of The Week --------------------------------------------------- */
+
+/* -------------------------------------------------Deals Of The Week Ends ------------------------------------------------- */
