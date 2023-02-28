@@ -9,11 +9,35 @@
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+@media (max-width: 576px) {
+  .card-images {
+    text-align: center;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .clerical {
+    font-size: 40px !important;
+    margin: 2rem 0 0 2.5rem;
+  }
+
+  .hurry-up {
+    font-size: 20px;
+    margin: 3rem 0 0 2.5rem;
+  }
+
+  .read-more {
+    margin: 3rem 0 0 2.5rem;
+  }
+
+  .add-btn {
+    margin-left: 0rem;
+  }
+
+  .catalog .card {
+    width: 7rem;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -23,8 +47,25 @@
     height: 49px;
   }
 
-  .navbar {
-    background-color: var(--red-color) !important;
+  .clerical {
+    font-size: 56px !important;
+    margin: 2.5rem 0 0 3.5rem;
+  }
+
+  .hurry-up {
+    font-size: 20px;
+    margin: 4.5rem 0 0 3.5rem;
+  }
+
+  .read-more {
+    margin: 3.5rem 0 0 3.5rem;
+  }
+  .add-btn {
+    margin-left: 2.56rem;
+  }
+
+  .catalog .card {
+    width: 10rem;
   }
 }
 
@@ -37,21 +78,61 @@
   .submit-btn {
     margin-right: 4rem !important;
   }
+
   .nav-item {
     margin: 0.32em;
+  }
+
+  .clerical {
+    font-size: 58px;
+    margin: 3rem 0 0 2.5rem;
+  }
+
+  .hurry-up {
+    font-size: 20px;
+    margin: 4rem 0 0 2.5rem;
+  }
+
+  .read-more {
+    margin: 3rem 0 0 2.5rem;
+  }
+  .add-btn {
+    margin-left: 5.2rem;
+  }
+
+  .catalog .card {
+    width: 13rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .category-list {
+    display: none !important;
   }
 }
 
 /*  XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
-  .navbar {
-    background-color: var(--yellow-color) !important;
-  }
   .form-control {
     width: 450px;
   }
+
   .submit-btn {
     margin-right: 10rem !important;
+  }
+
+  .clerical {
+    font-size: 64px;
+    margin: 4rem 0 0 2.5rem;
+  }
+
+  .hurry-up {
+    font-size: 20px;
+    margin: 4rem 0 0 2.5rem;
+  }
+
+  .read-more {
+    margin: 3rem 0 0 2.5rem;
   }
 }
 
