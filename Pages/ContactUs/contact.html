@@ -10,8 +10,8 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./about.css" />
-    <link rel="stylesheet" href="./responsive_about.css" />
+    <link rel="stylesheet" href="./contact.css" />
+    <link rel="stylesheet" href="./responsive_contact.css" />
   </head>
   <body>
     <!-- Navbar  -->
@@ -115,7 +115,7 @@
             <li><a href=""> CHNCELLERY </a></li>
             <li><a href=""> DISCOUNT </a></li>
             <li><a href="../ContactUs/contact.html"> CONTACT US </a></li>
-            <li><a href="./about.html"> ABOUT US</a></li>
+            <li><a href="../AboutUs/about.html"> ABOUT US</a></li>
           </ul>
           <h2 class="contact">
             <img src="./Images/contact.png" /> +73 7278 72 1123 <br /><span
@@ -127,6 +127,88 @@
       </div>
     </div>
     <!-- Category Ends -->
+
+    <!-- Contact  section -->
+    <div class="container-fluid py-4">
+      <div class="row mx-auto">
+        <form class="mx-auto contact-form d-flex ps-5">
+          <div class="">
+            <h1 class="text-center">Contact Us</h1>
+            <p class="text-center">
+              If you have any questions or comments please contact us via the
+              form below. We would love to hear from you !
+            </p>
+            <div class="d-flex gap-5">
+              <div class="form-group">
+                <input
+                  placeholder="Your name"
+                  type="text"
+                  class="form-control ps-4"
+                  id="firstName"
+                  name="firstName"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  placeholder="Your name"
+                  type="text"
+                  class="form-control ps-4"
+                  id="lastName"
+                  name="lastName"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group my-3">
+              <input
+                placeholder="Your phone number"
+                type="text"
+                class="form-control number ps-4"
+                id="phone"
+                name="phone"
+                required
+              />
+            </div>
+            <div class="form-group my-3">
+              <textarea
+                placeholder="Your message"
+                class="form-control ps-4"
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <div class="text-center submit-btn-wrapper py-4 mb-5">
+              <input
+                type="submit"
+                value="SEND MESSAGE"
+                class="btn btn-lg text-center"
+              />
+            </div>
+          </div>
+          <div class="need-help p-4">
+            <img src="./Images/help.png" class="help-img" alt="" />
+            <h3 class="text-center need-help-text py-3">Need Help</h3>
+            <h4 class="mt-4">Email Us</h4>
+            <h5>suport@companyname.com</h5>
+            <h4>Call us</h4>
+            <h5>1800-4655-563</h5>
+            <h4>Working Time</h4>
+            <h5>Mon - Sat , 9 am to 7 pm</h5>
+            <h3 class="text-center mt-5">Get in Touch</h3>
+            <div class="d-flex gap-3 justify-content-center align-items-center">
+              <img src="./Images/call.png" alt="" />
+              <img src="./Images/message.png" alt="" />
+              <img src="./Images/letter.png" alt="" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Contact  section Ends -->
 
     <!-- Footer -->
     <div class="container-fluid mt-5 footer py-3">

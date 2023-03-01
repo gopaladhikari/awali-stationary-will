@@ -25,15 +25,52 @@ font-family: 'Libre Bodoni', serif;
 }
 
 h1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 22px;
-  font-weight: 600;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700 !important;
+  font-size: 49.151px;
+  line-height: 60px;
 }
 
 h2 {
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
   font-weight: 600 !important;
+}
+
+h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 29px;
+  color: #000000;
+}
+
+h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16.5px;
+  line-height: 20px;
+  color: #000000;
+}
+h5 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12.8333px;
+  line-height: 16px;
+  color: #000000;
+}
+p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18.3333px;
+  line-height: 22px;
+
+  color: #626262;
 }
 
 body {
@@ -149,6 +186,89 @@ body {
   margin-right: 1em;
   margin-top: 0.5em;
 }
+/* ---------------------------------------------------Contact  --------------------------------------------------- */
+
+.contact-form {
+  max-width: 1350px !important;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  background: rgba(240, 208, 40, 0.2);
+  border-radius: 27.5px;
+}
+
+.contact-form input[type="text"] {
+  width: 353px;
+  height: 48px;
+  outline: 1.21131px solid #ffd600 !important;
+  border-radius: 40.377px;
+  background: transparent;
+}
+
+.contact-form .form-group .number {
+  width: 760px;
+}
+
+.contact-form input[type="submit"] {
+  width: 320px;
+  height: 58px;
+  background: #f0d028;
+  border-radius: 54.1246px;
+  transition: all 0.25s ease-in-out;
+}
+.contact-form input[type="submit"]:hover {
+  background: #f0d028;
+  transform: scale(0.93);
+}
+
+.submit-btn-wrapper {
+  width: 760px;
+}
+
+.contact-form .form-group textarea {
+  width: 760px;
+  height: 251.88px;
+  background-color: transparent;
+  outline: 1.21131px solid #ffd600 !important;
+  border-radius: 20px;
+}
+
+.contact-form input::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16.1508px;
+  line-height: 20px;
+  color: rgba(145, 145, 145, 0.8);
+}
+
+.contact-form input:focus {
+  background-color: transparent !important;
+}
+
+.contact-form textarea:focus {
+  background-color: transparent !important;
+}
+
+.need-help {
+  position: relative;
+  margin-top: 11rem !important;
+  width: 311.67px;
+  height: 443.25px;
+  background: #ffed8e;
+  border-radius: 18.3333px;
+  margin-right: 7rem;
+}
+
+.help-img {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -90%);
+}
+.need-help-text {
+  border-bottom: 2.75px solid #ffffff;
+}
+/* ---------------------------------------------------Contact Ends --------------------------------------------------- */
 
 /* ---------------------------------------------------Footer --------------------------------------------------- */
 
