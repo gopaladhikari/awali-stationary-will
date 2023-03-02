@@ -28,7 +28,7 @@ h1 {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700 !important;
-  font-size: 49.151px;
+  font-size: 28px;
   line-height: 60px;
 }
 
@@ -55,6 +55,7 @@ h4 {
   line-height: 20px;
   color: #000000;
 }
+
 h5 {
   font-family: "Montserrat";
   font-style: normal;
@@ -63,13 +64,13 @@ h5 {
   line-height: 16px;
   color: #000000;
 }
+
 p {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  font-size: 18.3333px;
+  font-size: 15px !important;
   line-height: 22px;
-
   color: #626262;
 }
 
@@ -155,7 +156,11 @@ body {
   color: white;
   padding: 0.87em 1em;
   border-radius: 0.7em;
-  /* margin-left: 13%; */
+  transition: all 0.2s ease-in-out;
+}
+
+.category-btn:hover {
+  transform: scale(1.03);
 }
 
 .customer-service {
@@ -174,8 +179,26 @@ body {
 }
 
 .category-list li a {
+  position: relative;
   color: black;
   text-decoration: none;
+  padding-bottom: 4px;
+}
+
+.category-list li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--yellow-color);
+  transition: width 500ms ease-out;
+}
+
+.category-list li a:hover::before {
+  width: 100%;
+  left: 0;
 }
 
 .contact {
@@ -189,7 +212,7 @@ body {
 /* ---------------------------------------------------Contact  --------------------------------------------------- */
 
 .contact-form {
-  max-width: 1350px !important;
+  max-width: 1496px !important;
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
@@ -198,15 +221,11 @@ body {
 }
 
 .contact-form input[type="text"] {
-  width: 353px;
   height: 48px;
   outline: 1.21131px solid #ffd600 !important;
   border-radius: 40.377px;
   background: transparent;
-}
-
-.contact-form .form-group .number {
-  width: 760px;
+  font-size: 14px;
 }
 
 .contact-form input[type="submit"] {
@@ -221,23 +240,24 @@ body {
   transform: scale(0.93);
 }
 
-.submit-btn-wrapper {
-  width: 760px;
-}
-
 .contact-form .form-group textarea {
   width: 760px;
   height: 251.88px;
   background-color: transparent;
   outline: 1.21131px solid #ffd600 !important;
   border-radius: 20px;
+  font-size: 14px;
+}
+
+.contact-form .form-group textarea::placeholder {
+  color: rgba(145, 145, 145, 0.8);
 }
 
 .contact-form input::placeholder {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  font-size: 16.1508px;
+  font-size: 14px;
   line-height: 20px;
   color: rgba(145, 145, 145, 0.8);
 }
@@ -252,12 +272,11 @@ body {
 
 .need-help {
   position: relative;
-  margin-top: 11rem !important;
+  margin-top: 2.32rem !important;
   width: 311.67px;
   height: 443.25px;
   background: #ffed8e;
   border-radius: 18.3333px;
-  margin-right: 7rem;
 }
 
 .help-img {
@@ -265,9 +284,15 @@ body {
   left: 50%;
   transform: translate(-50%, -90%);
 }
+
 .need-help-text {
   border-bottom: 2.75px solid #ffffff;
 }
+
+.need-help-img {
+  cursor: pointer;
+}
+
 /* ---------------------------------------------------Contact Ends --------------------------------------------------- */
 
 /* ---------------------------------------------------Footer --------------------------------------------------- */
@@ -294,5 +319,6 @@ body {
   height: 33px;
   width: 100px;
   border-radius: 0px;
+  cursor: pointer;
 }
 /* ---------------------------------------------------Footer Ends--------------------------------------------------- */
