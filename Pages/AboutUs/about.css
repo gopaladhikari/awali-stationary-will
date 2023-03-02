@@ -40,8 +40,24 @@ body {
   background-color: var(--white-color);
 }
 
+p {
+  max-width: 900px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 27px;
+  color: #000000;
+  margin: 1rem auto;
+}
+
 .row {
   max-width: 1496px;
+}
+
+.bg-color {
+  background: rgba(240, 208, 40, 0.2);
+  border-radius: 27.5px;
 }
 
 /* ---------------------------------------------------Navbar Style--------------------------------------------------- */
@@ -171,6 +187,52 @@ body {
   margin-right: 1em;
   margin-top: 0.5em;
 }
+/* ---------------------------------------------------Category Style Ends --------------------------------------------------- */
+
+/* ---------------------------------------------------About Style--------------------------------------------------- */
+
+.top-img img {
+  width: 100px;
+}
+
+.about-us {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 60px;
+  color: #000000;
+}
+
+.our-progress {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 49px;
+}
+
+.welcome {
+  color: #ffd600;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.O {
+  color: #ffd600;
+}
+
+.bottom-img img {
+  width: 120px;
+  margin: 1em;
+}
+
+.footer-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+/* ---------------------------------------------------About Style--------------------------------------------------- */
 
 /* ---------------------------------------------------Footer --------------------------------------------------- */
 

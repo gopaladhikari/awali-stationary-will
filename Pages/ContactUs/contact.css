@@ -321,4 +321,9 @@ body {
   border-radius: 0px;
   cursor: pointer;
 }
+
+.footer-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px !important;
+}
 /* ---------------------------------------------------Footer Ends--------------------------------------------------- */

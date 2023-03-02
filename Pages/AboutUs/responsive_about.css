@@ -20,6 +20,26 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  p {
+    font-size: 15px;
+  }
+  .about-us {
+    font-size: 32px;
+  }
+  .top-img img {
+    width: 200px !important;
+  }
+
+  .welcome {
+    font-size: 18px;
+  }
+
+  .our-progress {
+    font-size: 32px;
+  }
+  .bottom-img img {
+    width: 130px;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -31,6 +51,27 @@
   .logo {
     width: 265px;
     height: 49px;
+  }
+
+  p {
+    font-size: 17px;
+  }
+  .about-us {
+    font-size: 38px;
+  }
+  .top-img img {
+    width: 250px !important;
+  }
+
+  .welcome {
+    font-size: 16px;
+  }
+
+  .our-progress {
+    font-size: 38px;
+  }
+  .bottom-img img {
+    width: 140px;
   }
 }
 
@@ -50,6 +91,30 @@
   .nav-item {
     margin: 0.32em;
   }
+
+  p {
+    font-size: 18px;
+  }
+
+  .about-us {
+    font-size: 42px;
+  }
+
+  .top-img img {
+    width: 280px !important;
+  }
+
+  .welcome {
+    font-size: 20px;
+  }
+
+  .our-progress {
+    font-size: 42px;
+  }
+
+  .bottom-img img {
+    width: 150px;
+  }
 }
 
 /*  XX-Large devices (larger desktops, 1400px and up) */
@@ -64,6 +129,30 @@
 
   .submit-btn {
     margin-right: 10rem !important;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .about-us {
+    font-size: 48px;
+  }
+
+  .top-img img {
+    width: 300px !important;
+  }
+
+  .welcome {
+    font-size: 22px;
+  }
+
+  .our-progress {
+    font-size: 48px;
+  }
+
+  .bottom-img img {
+    width: 180px;
   }
 }
 
