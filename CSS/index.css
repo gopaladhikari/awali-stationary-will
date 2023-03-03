@@ -44,6 +44,14 @@ h3 {
   color: #000000;
 }
 
+h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px !important;
+  color: #9f9f9f !important;
+}
+
 body {
   background-color: var(--white-color);
 }
@@ -190,6 +198,7 @@ body {
   margin: 0 0.5em !important;
   background-color: var(--yellow-color) !important;
   opacity: 1;
+  z-index: 1;
 }
 
 .carousel-caption {
@@ -464,3 +473,108 @@ body {
   font-size: 14px;
 }
 /* ---------------------------------------------------Footer Ends--------------------------------------------------- */
+
+/* ---------------------------------------------------Login Style------------------------------------------------- */
+
+.login-form-wrapper {
+}
+
+.close-btn {
+  cursor: pointer;
+  width: 35px;
+}
+
+.login-form {
+  max-width: 1000px;
+  height: 450px;
+  background: #ffffff;
+  box-shadow: inset 0px 16.6667px 16.6667px #ffdd2c;
+  border-radius: 41.6667px;
+  padding: 0 2em;
+  position: fixed !important;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, -50%) scale(0) !important;
+  width: 100%;
+  z-index: 2;
+  transition: all 1s ease;
+}
+
+.open-login-form-popup {
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1) !important;
+}
+
+.login {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px !important;
+  color: #404040;
+}
+
+.register-here {
+  color: #ff0000;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.login-email,
+.login-password {
+  max-width: 440px;
+  border-bottom: 1.66667px solid #f0d028;
+  margin: 1.5rem auto;
+}
+
+.login-email input,
+.login-password input {
+  border: none;
+  padding: 0.8em;
+}
+
+.login-email input:focus,
+.login-password input:focus {
+  border: none;
+  outline: none;
+}
+
+.login-email input::placeholder,
+.login-password input::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  color: #bbbbbb;
+}
+
+.login-email img,
+.login-password img {
+  width: 25px;
+}
+
+.form-submit input {
+  background: #f0d028;
+  border-radius: 83.3333px;
+  width: 233.33px;
+  height: 50px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  outline: none;
+  border: none;
+  transition: all 300ms ease;
+}
+
+.form-submit input:hover {
+  transform: scale(0.95);
+}
+
+/* --------------------------------------------------Login Style Ends-------------------------------------------------- */
+
+/* --------------------------------------------------Sign up Style -------------------------------------------------- */
+/* --------------------------------------------------Sign up Style Ends-------------------------------------------------- */
