@@ -35,6 +35,15 @@ h2 {
   font-weight: 600 !important;
 }
 
+h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+
 body {
   background-color: var(--white-color);
 }
@@ -172,14 +181,32 @@ body {
 
 /* ---------------------------------------------------Category Style Ends--------------------------------------------------- */
 
-/* ---------------------------------------------------Hero SectionStyle --------------------------------------------------- */
+/* ---------------------------------------------------Carousel Style--------------------------------------------------- */
+
+.carousel-indicators button {
+  width: 15px !important;
+  height: 15px !important;
+  border-radius: 50%;
+  margin: 0 0.5em !important;
+  background-color: var(--yellow-color) !important;
+  opacity: 1;
+}
+
+.carousel-caption {
+  text-align: left;
+  position: absolute !important;
+  top: 4rem;
+  left: 6rem !important;
+}
+
 .hero-sec {
-  width: 1496px;
-  background-image: url(../Images/homepage-banner.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 414px;
+  max-width: 1496px;
+  height: 494px !important;
   border-radius: 22px;
+}
+.hero-sec img {
+  max-width: 1496px;
+  height: 494px !important;
 }
 
 .clerical {
@@ -188,7 +215,7 @@ body {
   font-weight: 400;
   font-size: 32px !important;
   line-height: 80px;
-  margin: 2rem 0 0 1rem;
+  color: var(--black-color);
 }
 
 .hurry-up {
@@ -197,7 +224,16 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  margin: 3rem 0 0 1rem;
+  color: var(--black-color);
+  margin-top: 5rem;
+  margin-bottom: 3rem !important;
+}
+
+.carousel-control-prev-icon {
+  margin-left: -150px;
+}
+.carousel-control-next-icon {
+  margin-left: 150px;
 }
 
 .read-more {
@@ -205,8 +241,6 @@ body {
   height: 41px;
   background: #f0d028;
   border-radius: 8px;
-  margin: 2.5rem 0 0 1rem;
-  color: white;
   border: none !important;
   transition: all 300ms ease-in-out;
 }
@@ -214,7 +248,7 @@ body {
 .read-more:hover {
   transform: scale(0.95);
 }
-/* ---------------------------------------------------Catalog Style Ends--------------------------------------------------- */
+/* ---------------------------------------------------Carousel Style Ends--------------------------------------------------- */
 
 /* ---------------------------------------------------Menu --------------------------------------------------- */
 .menu {
@@ -249,6 +283,21 @@ body {
 
 .card-images .two {
   margin-right: 30px;
+}
+
+.arrow-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(217, 217, 217, 0.8) !important;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.fa-greater-than {
+  font-size: 10px !important;
 }
 
 /* ---------------------------------------------------Menu Ends--------------------------------------------------- */
@@ -375,6 +424,11 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.29);
   width: 130px;
   height: 47px;
+  transition: all 300ms ease;
+}
+
+.img-overlay button:hover {
+  transform: scale(0.95);
 }
 
 .subscribe-for-the-news {

@@ -32,16 +32,13 @@
 @media (min-width: 768px) {
   .clerical {
     font-size: 40px !important;
-    margin: 2rem 0 0 2.5rem;
   }
 
   .hurry-up {
     font-size: 20px;
-    margin: 3rem 0 0 2.5rem;
   }
 
   .read-more {
-    margin: 3rem 0 0 2.5rem;
   }
 
   .add-btn {
@@ -75,7 +72,6 @@
 
   .clerical {
     font-size: 56px !important;
-    margin: 2.5rem 0 0 3.5rem;
   }
 
   .catalog .card {
@@ -84,11 +80,9 @@
 
   .hurry-up {
     font-size: 20px;
-    margin: 4.5rem 0 0 3.5rem;
   }
 
   .read-more {
-    margin: 3.5rem 0 0 3.5rem;
   }
   .add-btn {
     margin-left: 2.56rem;
@@ -123,16 +117,13 @@
 
   .clerical {
     font-size: 58px;
-    margin: 3rem 0 0 2.5rem;
   }
 
   .hurry-up {
     font-size: 20px;
-    margin: 4rem 0 0 2.5rem;
   }
 
   .read-more {
-    margin: 3rem 0 0 2.5rem;
   }
 
   .add-btn {
@@ -173,16 +164,13 @@
 
   .clerical {
     font-size: 64px;
-    margin: 4rem 0 0 2.5rem;
   }
 
   .hurry-up {
     font-size: 20px;
-    margin: 4rem 0 0 2.5rem;
   }
 
   .read-more {
-    margin: 3rem 0 0 2.5rem;
   }
   .deals-of-the-week1 {
     margin-right: 35rem !important;
