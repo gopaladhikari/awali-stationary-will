@@ -5,7 +5,12 @@ let userName = document.getElementById("userName");
 let Body = document.getElementById("body");
 let radio = document.getElementById("radio");
 let reistrationForm = document.getElementById("registration-form");
+
+let regEmail = document.getElementById("reg-email");
+let regPassword = document.getElementById("reg-password");
 let confirmPassword = document.getElementById("confirm-password");
+let phoneNumber = document.getElementById("phone-number");
+let error = document.getElementById("error");
 
 setTimeout(() => {
   loginForm.classList.add("open-login-form-popup");
@@ -62,5 +67,33 @@ const togglePassword = () => {
     confirmPassword.type = "text";
   } else {
     confirmPassword.type = "password";
+  }
+};
+
+reistrationForm.onsubmit = (event) => {
+  if (regEmail.value == "") {
+    error.innerHTML = "Please enter a valid email address";
+    setTimeout(() => {
+      error.innerHTML = "";
+    }, 3000);
+    return false;
+  } else if (regPassword.value == "") {
+    error.innerHTML = "Please enter a password";
+    setTimeout(() => {
+      error.innerHTML = "";
+    }, 3000);
+    return false;
+  } else if (regPassword.value != confirmPassword.value) {
+    error.innerHTML = "Password does'nt match";
+    setTimeout(() => {
+      error.innerHTML = "";
+    }, 3000);
+    return false;
+  } else if (phoneNumber.value == "") {
+    error.innerHTML = "Please enter a phone number";
+    setTimeout(() => {
+      error.innerHTML = "";
+    }, 3000);
+    return false;
   }
 };
