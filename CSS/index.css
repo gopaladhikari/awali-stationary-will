@@ -39,7 +39,7 @@ h3 {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 18px !important;
   line-height: 15px;
   color: #000000;
 }
@@ -52,12 +52,23 @@ h4 {
   color: #9f9f9f !important;
 }
 
+h6 {
+  font-size: 14px;
+  font-family: "Montserrat";
+}
+
 body {
   background-color: var(--white-color);
 }
 
 .row {
   max-width: 1496px;
+}
+
+.blur {
+  transition: all 500ms ease-out;
+  filter: blur(8px);
+  z-index: 0;
 }
 
 /* ---------------------------------------------------Navbar Style--------------------------------------------------- */
@@ -71,6 +82,12 @@ body {
   background-color: var(--yellow-color) !important;
   font-family: "Inter", sans-serif;
   font-size: 12px;
+}
+
+.nav-item .nav-login {
+  background: transparent;
+  outline: none;
+  border: none;
 }
 
 .navbar-toggler,
@@ -211,11 +228,11 @@ body {
 .hero-sec {
   max-width: 1496px;
   height: 494px !important;
-  border-radius: 22px;
 }
 .hero-sec img {
   max-width: 1496px;
   height: 494px !important;
+  border-radius: 22px;
 }
 
 .clerical {
@@ -476,9 +493,6 @@ body {
 
 /* ---------------------------------------------------Login Style------------------------------------------------- */
 
-.login-form-wrapper {
-}
-
 .close-btn {
   cursor: pointer;
   width: 35px;
@@ -487,22 +501,27 @@ body {
 .login-form {
   max-width: 1000px;
   height: 450px;
-  background: #ffffff;
+  background-color: white;
   box-shadow: inset 0px 16.6667px 16.6667px #ffdd2c;
   border-radius: 41.6667px;
   padding: 0 2em;
   position: fixed !important;
   left: 50%;
-  top: 0%;
+  top: 50%;
   transform: translate(-50%, -50%) scale(0) !important;
+  visibility: hidden;
   width: 100%;
   z-index: 2;
-  transition: all 1s ease;
+  transition: all 800ms ease;
+  visibility: hidden;
+  z-index: 2;
 }
 
 .open-login-form-popup {
-  top: 50%;
   transform: translate(-50%, -50%) scale(1) !important;
+  visibility: visible;
+  opacity: 1;
+  z-index: 999999999;
 }
 
 .login {
@@ -554,7 +573,7 @@ body {
   width: 25px;
 }
 
-.form-submit input {
+.form-submit button {
   background: #f0d028;
   border-radius: 83.3333px;
   width: 233.33px;
@@ -576,5 +595,113 @@ body {
 
 /* --------------------------------------------------Login Style Ends-------------------------------------------------- */
 
-/* --------------------------------------------------Sign up Style -------------------------------------------------- */
-/* --------------------------------------------------Sign up Style Ends-------------------------------------------------- */
+/* --------------------------------------------------Register  Style -------------------------------------------------- */
+.reistration-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  z-index: 2;
+  width: 100%;
+  max-width: 1000px;
+  height: 780px;
+  background: #ffffff;
+  padding: 0 1em 0 1em;
+  box-shadow: inset 0px 16.6667px 16.6667px #ffdd2c;
+  border-radius: 41.6667px;
+  transition: all 800ms ease;
+}
+
+.open-registration-form {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.google-divs {
+  background-color: #d9d9d9;
+  width: 250px;
+  height: 50.38px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.facebook-divs {
+  width: 250px;
+  height: 50.38px;
+  background-color: #248ddb;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.mobile_singin_option div {
+  margin: 0 auto;
+  width: 250px !important;
+}
+
+.facebookandgoogle {
+  display: none !important;
+}
+
+.already {
+  font: 16px;
+}
+
+.lines {
+  width: 100px;
+  height: 3px;
+}
+
+#reg-email,
+#reg-email:focus,
+#reg-password,
+#confirm-password,
+#confirm-password:focus,
+#reg-password:focus,
+#phone-number,
+#phone-number:focus {
+  border: none !important;
+  outline: none !important;
+}
+
+.wrapper {
+  border-bottom: 1px solid #f0d028;
+  max-width: 535px;
+  margin: 0 auto;
+}
+
+#radio {
+  appearance: none; /* Hide default radio button */
+  width: 15px;
+  height: 15px;
+  border-radius: 50%; /* Make radio button circular */
+  border: 2px solid #f0d028; /* Add border */
+  outline: none; /* Remove outline when radio button is focused */
+  transition: border-color 0.2s ease-in-out; /* Add transition effect */
+}
+
+#radio:checked {
+  background-color: #f0d028; /* Change border color when radio button is checked */
+}
+
+.wrapper input::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #bbbbbb;
+}
+
+.register-btn {
+  width: 255px;
+  height: 50px;
+  outline: none;
+  box-shadow: none;
+  background: #f0d028;
+  border-radius: 83.3333px;
+  border: none;
+  transition: all 250ms ease;
+}
+
+.register-btn:hover {
+  transform: scale(0.95);
+}
