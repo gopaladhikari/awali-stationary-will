@@ -14,12 +14,6 @@ let regPassword = document.getElementById("reg-password");
 let confirmPassword = document.getElementById("confirm-password");
 let phoneNumber = document.getElementById("phone-number");
 let error = document.getElementById("error");
-let counter = 0;
-
-setTimeout(() => {
-  loginForm.classList.add("open-login-form-popup");
-  Body.classList.add("blur");
-}, 3000);
 
 const closeLogin = () => {
   loginForm.classList.remove("open-login-form-popup");
@@ -102,9 +96,3 @@ reistrationForm.onsubmit = (event) => {
   }
 };
 // ================Form Validation Ends =================
-
-// Menu
-let slide = document.querySelectorAll(".images-wrapper");
-slide.forEach((slide, index) => {
-  // slide.style.left = `${index * 100}%`;
-});

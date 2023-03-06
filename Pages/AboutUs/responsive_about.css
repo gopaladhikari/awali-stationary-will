@@ -20,6 +20,10 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  h1 {
+    font-size: 42px;
+  }
+
   p {
     font-size: 15px;
   }
@@ -37,8 +41,30 @@
   .our-progress {
     font-size: 32px;
   }
+
   .bottom-img img {
     width: 130px;
+  }
+  .login {
+    font-size: 30px !important;
+  }
+
+  .login-email input::placeholder,
+  .login-password input::placeholder {
+    font-size: 16px;
+  }
+  .login-form-wrapper {
+    top: 4%;
+  }
+  .facebookandgoogle {
+    display: block !important;
+  }
+  .mobile_singin_option {
+    display: none !important;
+  }
+
+  .lines {
+    width: 240px;
   }
 }
 
@@ -72,6 +98,30 @@
   }
   .bottom-img img {
     width: 140px;
+  }
+
+  .login {
+    font-size: 40px !important;
+  }
+
+  .login-email input::placeholder,
+  .login-password input::placeholder {
+    font-size: 17px;
+  }
+  .login-form-wrapper {
+    top: 60%;
+  }
+
+  .login {
+    font-size: 40px !important;
+  }
+
+  .login-email input::placeholder,
+  .login-password input::placeholder {
+    font-size: 17px;
+  }
+  .login-form-wrapper {
+    top: 60%;
   }
 }
 
@@ -114,6 +164,18 @@
 
   .bottom-img img {
     width: 150px;
+  }
+
+  .login {
+    font-size: 50px !important;
+  }
+
+  .login-email input::placeholder,
+  .login-password input::placeholder {
+    font-size: 18px;
+  }
+  .login-form-wrapper {
+    top: 6%;
   }
 }
 

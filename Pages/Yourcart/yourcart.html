@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./yourcart.css" />
+    <link rel="stylesheet" href="./yourcart_responsive.css" />
+  </head>
+  <body>
+    <div id="body">
+      <!-- Navbar -->
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/"
+              ><img src="Images/logo.png" class="img-fluid logo" alt="logo"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <form class="d-flex">
+                    <input
+                      class="form-control"
+                      type="search"
+                      placeholder="Search Here"
+                      aria-label="Search"
+                    />
+                    <button class="btn submit-btn p-0 m-0" type="submit">
+                      Submit
+                    </button>
+                  </form>
+                </li>
+                <li class="nav-item dropdown mt-2 mt-lg-0">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Ukraine
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/Pages/wishlist.html">
+                    <span><img src="./Images/heart.png" alt="" /></span>
+                    <span
+                      ><img
+                        src="./Images/white-circle.png"
+                        class="white-circle"
+                        alt=""
+                    /></span>
+                    Wishlist</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./yourcart.html">
+                    <span><img src="./Images/cart.png" alt="" /></span>
+                    <span
+                      ><img
+                        src="./Images/white-circle.png"
+                        class="white-circle"
+                        alt=""
+                    /></span>
+                    Cart</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <button
+                    class="nav-link nav-login"
+                    id="userName"
+                    onclick="dislayLogin()"
+                  >
+                    <span><img src="./Images/login.png" alt="" /></span> Login
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- Navbar  Ends -->
+
+      <!-- Category  -->
+      <div class="container-fluid pt-2">
+        <div class="row mx-auto">
+          <div
+            class="col-12 d-flex align-items-center justify-content-between mx-auto"
+          >
+            <button class="category-btn">
+              <img src="./Images/menu.png" class="me-2" alt="" /> Category
+              <img src="./Images/downArrow.png" class="ms-2" alt="" />
+            </button>
+            <ul class="d-flex gap-3 gap-lg-4 category-list">
+              <li><a href="/"> HOME </a></li>
+              <li><a href=""> NOVELTY </a></li>
+              <li><a href=""> CHNCELLERY </a></li>
+              <li><a href=""> DISCOUNT </a></li>
+              <li><a href="../ContactUs/contact.html"> CONTACT US </a></li>
+              <li><a href="../AboutUs/about.html">ABOUT US </a></li>
+            </ul>
+            <h2 class="contact">
+              <img src="./Images/contact.png" /> +73 7278 72 1123 <br /><span
+                class="customer-service"
+                >Customer service</span
+              >
+            </h2>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <!-- Category Ends -->
+
+      <!-- Footer -->
+      <div class="container-fluid mt-5">
+        <div class="row mx-auto">
+          <div class="col-6 col-lg-4 mt-5 p-0">
+            <img src="./Images/footer-logo.png" class="img-fluid mt-4" alt="" />
+          </div>
+          <div class="col-6 col-lg-2">
+            <ul class="list-group">
+              <li class="list-group-item">GOODS</li>
+              <li class="list-group-item mt-4">
+                Promotions and discounts on stationery
+              </li>
+              <li class="list-group-item">Novelties of the office</li>
+              <li class="list-group-item">Sales leaders</li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <ul class="list-group">
+              <li class="list-group-item">INFORMATION</li>
+              <li class="list-group-item mt-4">Payment and delivery</li>
+              <li class="list-group-item">User agreement</li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <ul class="list-group">
+              <li class="list-group-item">YOUR PROFILE</li>
+              <li class="list-group-item mt-4">Personal data</li>
+              <li class="list-group-item">order</li>
+              <li class="list-group-item">Addresses</li>
+              <li class="list-group-item">Coupons</li>
+            </ul>
+          </div>
+          <div
+            class="col-6 col-lg-2 d-flex mt-5 p-0 ms-5 ms-md-0 justify-content-end"
+          >
+            <img
+              src="./Images/play-store.png"
+              class="img-fluid play-store mt-4"
+              alt=""
+            />
+            <img
+              src="./Images/apple-store.png"
+              class="img-fluid play-store mt-4"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <hr />
+      <!-- ================================================================================================================= -->
+
+      <div class="p-2">
+        <p class="text-center footer-text">
+          &copy; Copyright Awali Starionary WLL 2023. All rights reserved.
+        </p>
+      </div>
+    </div>
+    <!-- Footer Ends -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./yourcart.js"></script>
+  </body>
+</html>
