@@ -16,11 +16,6 @@ let phoneNumber = document.getElementById("phone-number");
 let error = document.getElementById("error");
 let counter = 0;
 
-setTimeout(() => {
-  loginForm.classList.add("open-login-form-popup");
-  Body.classList.add("blur");
-}, 3000);
-
 const closeLogin = () => {
   loginForm.classList.remove("open-login-form-popup");
   Body.classList.remove("blur");
@@ -104,7 +99,14 @@ reistrationForm.onsubmit = (event) => {
 // ================Form Validation Ends =================
 
 // Menu
-let slide = document.querySelectorAll(".images-wrapper");
-slide.forEach((slide, index) => {
-  // slide.style.left = `${index * 100}%`;
+const carousel = document.querySelector(".menu-carousel");
+
+let icons = document.querySelectorAll(".i");
+let firstImg = carousel.querySelectorAll("img")[0];
+let firstImgWidth = firstImg.clientWidth + 100;
+
+icons.forEach((icon) => {
+  icon.addEventListener("click", () => {
+    carousel.scrollLeft += icon.id === "right" ? firstImgWidth : -firstImgWidth;
+  });
 });

@@ -5,6 +5,9 @@
   .catalog .col-md-2 {
     margin-right: 0px !important;
   }
+  .logo {
+    margin-left: 15px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -129,8 +132,16 @@
   .login-password input::placeholder {
     font-size: 17px;
   }
+
   .login-form-wrapper {
     top: 60%;
+  }
+
+  .logo {
+    margin-left: 15px;
+  }
+  .submit-btn {
+    margin-right: 2.8rem !important;
   }
 }
 
@@ -144,7 +155,7 @@
   }
 
   .submit-btn {
-    margin-right: 5rem !important;
+    margin-right: 3rem !important;
   }
 
   .nav-item {
@@ -192,6 +203,12 @@
   }
 }
 
+@media (min-width: 1300px) {
+  .submit-btn {
+    margin-right: 6rem !important;
+  }
+}
+
 /*  XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
   .category-list {
@@ -203,7 +220,7 @@
   }
 
   .submit-btn {
-    margin-right: 10rem !important;
+    margin-right: 14rem !important;
   }
 
   .catalog .card {
@@ -218,8 +235,6 @@
     font-size: 20px;
   }
 
-  .read-more {
-  }
   .deals-of-the-week1 {
     margin-right: 35rem !important;
   }
@@ -229,22 +244,33 @@
   .submit-btn {
     margin-right: 18rem !important;
   }
+  .logo {
+    margin-left: 70px;
+  }
 }
 
 @media (min-width: 1700px) {
   .submit-btn {
-    margin-right: 26rem !important;
+    margin-right: 31.8rem !important;
+  }
+  .logo {
+    margin-left: 6.5rem !important;
   }
 }
-
 @media (min-width: 1800px) {
   .submit-btn {
-    margin-right: 35rem !important;
+    margin-right: 31.8rem !important;
+  }
+  .logo {
+    margin-left: 6.5rem !important;
   }
 }
 
 @media (min-width: 1900px) {
   .submit-btn {
-    margin-right: 38rem !important;
+    margin-right: 18.5rem !important;
+  }
+  .logo {
+    margin-left: 13rem !important;
   }
 }

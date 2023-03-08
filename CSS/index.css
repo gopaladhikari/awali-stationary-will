@@ -74,6 +74,7 @@ body {
 /* ---------------------------------------------------Navbar Style--------------------------------------------------- */
 
 .logo {
+  margin-left: 14rem;
   width: 200px;
   height: 49px;
 }
@@ -208,14 +209,16 @@ body {
 
 /* ---------------------------------------------------Carousel Style--------------------------------------------------- */
 
+.carousel-indicators {
+  z-index: 3;
+}
+
 .carousel-indicators button {
   width: 15px !important;
   height: 15px !important;
   border-radius: 50%;
-  margin: 0 0.5em !important;
   background-color: var(--yellow-color) !important;
-  opacity: 1;
-  z-index: 1;
+  z-index: 120;
 }
 
 .carousel-caption {
@@ -255,75 +258,104 @@ body {
   margin-bottom: 3rem !important;
 }
 
-.carousel-control-prev-icon {
-  margin-left: -150px;
+.carousel-item {
+  position: relative;
+  z-index: 2;
 }
-.carousel-control-next-icon {
-  margin-left: 150px;
+
+.carousel-control-prev {
+  position: absolute;
+  left: 2%;
+  z-index: 50;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+}
+
+.carousel-control-next {
+  position: absolute;
+  right: 2%;
+  z-index: 50;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
 }
 
 .read-more {
   width: 132px;
-  height: 41px;
+  padding: 0.7em 0;
   background: #f0d028;
   border-radius: 8px;
   border: none !important;
   transition: all 300ms ease-in-out;
+  z-index: 5;
 }
 
-.read-more:hover {
-  transform: scale(0.95);
+.carousel-item .read-more:hover {
+  transform: scale(0.95) !important;
+  background-color: var(--black-color) !important;
+  color: white !important;
 }
 /* ---------------------------------------------------Carousel Style Ends--------------------------------------------------- */
 
 /* ---------------------------------------------------Menu --------------------------------------------------- */
-.menu {
+
+.menu-wrapper {
   max-width: 1496px;
-}
-.menu img {
-  width: 120px;
-}
-
-.card-images .one,
-.three {
-  margin-right: 28px;
-}
-.four {
-  margin-right: 30px;
-}
-.five {
-  margin-right: 28px;
-}
-.six,
-.nine {
-  margin-right: 28px;
-}
-.ten {
-  margin-right: 28px !important;
+  margin: 0 auto;
+  padding: 1em;
 }
 
-.card-images .seven,
-.eight {
-  margin-right: 30px;
+.menu-carousel {
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 1rem;
+  transition: 500ms;
+  scroll-behavior: smooth;
 }
 
-.card-images .two {
-  margin-right: 30px;
-}
-
-.arrow-icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(217, 217, 217, 0.8) !important;
-  border-radius: 50%;
-  height: 30px;
-  width: 30px;
+.menu-carousel img {
   cursor: pointer;
+  object-fit: cover;
+  margin-right: 20px;
 }
 
-.fa-greater-than {
-  font-size: 10px !important;
+.menu-carousel:last-child {
+  margin-right: 0px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrows {
+  display: flex;
+  gap: 25px;
+}
+
+.left-arrow,
+.right-arrow {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: #f2f3f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+  background-color: #3bb77e;
+}
+
+.fa-arrow-left,
+.fa-arrow-right {
+  font-size: 1rem;
 }
 
 /* ---------------------------------------------------Menu Ends--------------------------------------------------- */
@@ -404,6 +436,16 @@ body {
 
 .catalog .card {
   width: 10rem;
+  transition: all 200ms ease;
+  overflow: hidden;
+}
+
+.card .card-img-top {
+  cursor: pointer;
+}
+
+.catalog .card:hover {
+  border: 1px solid var(--yellow-color);
 }
 
 .catalog .col-md-2 {
