@@ -24,7 +24,7 @@ font-family: 'Libre Bodoni', serif;
 }
 
 h1 {
-  font-size: 22px;
+  font-size: 50px;
   font-family: "Inter", sans-serif;
   font-weight: 600;
 }
@@ -141,46 +141,7 @@ body {
   margin-top: -13px;
   margin-left: -10px;
 }
-
-.category-btn-dropdown {
-  padding: 0 0.32em;
-  position: absolute;
-  color: black;
-  top: 10rem;
-  left: 5%;
-  z-index: 10;
-  background: white;
-  visibility: hidden;
-  transition: all 100ms ease-in-out;
-}
-
-.show-dropdown {
-  visibility: visible;
-  z-index: 1000;
-}
-
-.category-btn-dropdown div {
-  width: 300px;
-  margin: 0.5em 0;
-  padding: 0.32em;
-  overflow: hidden !important;
-}
-
-.category-btn-dropdown div:hover {
-  outline: 1px solid var(--yellow-color);
-}
-
-.category-btn-dropdown h2 {
-  cursor: pointer !important;
-}
-
-.category-btn-dropdown img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-
-/* ---------------------------------------------------Navbar Style Ends--------------------------------------------------- */
+/* ---------------------------------------------------Navbar Style Ends --------------------------------------------------- */
 
 /* ---------------------------------------------------Category Style --------------------------------------------------- */
 
@@ -243,8 +204,141 @@ body {
   margin-right: 1em;
   margin-top: 0.5em;
 }
+.category-btn {
+  position: relative;
+}
+
+.category-btn-dropdown {
+  padding: 0 0.32em;
+  position: absolute;
+  color: black;
+  top: 10rem;
+  left: 5%;
+  z-index: 10;
+  background: white;
+  visibility: hidden;
+  transition: all 100ms ease-in-out;
+}
+
+.show-dropdown {
+  visibility: visible;
+  z-index: 1000;
+}
+
+.category-btn-dropdown div {
+  width: 300px;
+  margin: 0.5em 0;
+  padding: 0.32em;
+  overflow: hidden !important;
+}
+
+.category-btn-dropdown div:hover {
+  outline: 1px solid var(--yellow-color);
+}
+
+.category-btn-dropdown h2 {
+  cursor: pointer !important;
+}
+
+.category-btn-dropdown img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
 
 /* ---------------------------------------------------Category Style Ends--------------------------------------------------- */
+
+/* ---------------------------------------------------Middle Part Style --------------------------------------------------- */
+
+.topic {
+  position: block;
+  text-align: center;
+  margin: auto;
+  width: 497px;
+  height: 61px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 61px;
+}
+#topic1 {
+  color: #ffd600;
+}
+
+.box1 {
+  display: flex;
+  width: 1130px;
+  height: 438px;
+  margin: 78px 155px;
+  justify-content: space-between;
+}
+
+.box {
+  width: 350px;
+  height: 438px;
+  background: #ffffff;
+  border: 3px solid #d9d9d9;
+  box-shadow: 0px 5px 10px #d9d9d9;
+  border-radius: 20px;
+}
+.box img {
+  display: block;
+  margin: auto;
+  padding: 29px 25px;
+  width: 300px;
+  height: 342.86px;
+  background: url(500625003-removebg-preview.png);
+  border-radius: 20px;
+}
+.box p {
+  position: relative;
+  left: 57px;
+  top: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 7px;
+  width: 236px;
+  height: 96px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  background: #ffd600;
+  border-radius: 10.7705px;
+  color: #000000;
+}
+/* ---------------------------------------------------Middle Part Style Ends--------------------------------------------------- */
+
+/* ---------------------------------------------------Footer --------------------------------------------------- */
+.list-group {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+
+.list-group-item {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.play-store {
+  height: 33px;
+  width: 100px;
+  border-radius: 0px;
+}
+.footer-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+/* ---------------------------------------------------Footer Ends--------------------------------------------------- */
 
 /* ---------------------------------------------------Footer --------------------------------------------------- */
 .list-group {

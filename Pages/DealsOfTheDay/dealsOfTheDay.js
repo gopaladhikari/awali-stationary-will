@@ -104,3 +104,22 @@ const categoryDropdown = document.querySelector(".category-btn-dropdown");
 categoryBtn.onclick = () => {
   categoryDropdown.classList.toggle("show-dropdown");
 };
+
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 3000, // in milliseconds
+    disableOnInteraction: false, // set to true if you want to disable autoplay on user interaction
+  },
+  loop: true, // enable pagination loop
+});
+
+icons.forEach((icon) => {
+  icon.addEventListener("click", () => {
+    carousel.scrollLeft += icon.id === "right" ? firstImgWidth : -firstImgWidth;
+  });
+});

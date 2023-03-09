@@ -18,6 +18,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./dealsoftheday.css" />
     <link rel="stylesheet" href="./responsive_dealsoftheday.css" />
   </head>
@@ -161,7 +165,7 @@
                 </a>
               </li>
               <li>
-                <a href="../DesktopEssential/desktopessential.html">
+                <a href="../DesktopEssential/desktop-essential.html">
                   DESKTOP ESSENTIAL
                 </a>
               </li>
@@ -181,6 +185,115 @@
       <!-- Category Ends -->
       <!-- ================================================================================================================= -->
 
+      <!-- Swiper  -->
+      <div class="container-flud">
+        <div class="row mx-auto">
+          <div class="col-12">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./Images/banner.png" class="img-fluid" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./Images/homepage-banner.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./Images/her-sec.png" class="img-fluid" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="https://www.pacificmalls.in/tagore-garden/images/Electronics-banner-2.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Swiper Ends -->
+      <h1 class="text-center my-5">
+        <span class="deals">Deals</span> Of The Day
+      </h1>
+
+      <!-- Images Section -->
+
+      <div class="container-fluid">
+        <div class="row gx-5 mx-auto">
+          <div class="col-1 d-flex align-items-center justify-content-center">
+            <img src="./Images/left.png" class="img-fluid icon" alt="" />
+          </div>
+          <div class="col-10">
+            <div class="row gx-5 img-wrapper">
+              <div class="col-md-3 mx-0 col-6">
+                <img src="./Images/first.png" class="img-fluid" alt="" />
+              </div>
+              <div class="col-md-3 mx-0 col-6">
+                <img src="./Images/second.png" class="img-fluid" alt="" />
+              </div>
+              <div class="col-md-3 mx-0 col-6">
+                <img src="./Images/third.png" class="img-fluid" alt="" />
+              </div>
+              <div class="col-md-3 mx-0 col-6">
+                <img src="./Images/fourth.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-1 d-flex align-items-center justify-content-end">
+            <img src="./Images/right.png" class="img-fluid icon" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row mx-auto">
+          <div class="col-md-4">
+            <img src="./Images/todayOffer.png" alt="" />
+          </div>
+          <div class="col-md-8"></div>
+        </div>
+      </div>
+      <!-- Images Section Ends -->
+
+      <!-- Our Brands  -->
+      <div class="container-fluid bg py-5 my-5">
+        <div class="row mx-auto">
+          <div class="col-12">
+            <h1 class="text-center"><span class="deals">Our</span> Brands</h1>
+          </div>
+          <div
+            class="col-12 d-flex gap-4 justify-content-center align-items-center my-4"
+          >
+            <img
+              src="./Images/left.png"
+              id="left"
+              class="img-fluid icon i"
+              alt=""
+            />
+            <div
+              class="d-flex justify-content-center align-items-center gap-3 overflow-hidden logo-wrapper"
+            >
+              <img src="./Images/deli.png" class="img-fluid" alt="" />
+              <img src="./Images/kangaro.png" class="img-fluid" alt="" />
+              <img src="./Images/ourable.png" class="img-fluid" alt="" />
+              <img src="./Images/casio.png" class="img-fluid" alt="" />
+            </div>
+            <img
+              src="./Images/right.png"
+              id="right"
+              class="img-fluid icon i"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Our Brands Ends -->
       <!-- ================================================================================================================= -->
       <!-- Footer -->
       <div class="container-fluid mt-5">
@@ -443,6 +556,8 @@
     </div>
     <!-- Register Pop up Ends -->
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"

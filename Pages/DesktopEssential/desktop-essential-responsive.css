@@ -1,0 +1,387 @@
+@media (max-width: 991px) {
+  .category-list {
+    display: none !important;
+  }
+  .catalog .col-md-2 {
+    margin-right: 0px !important;
+  }
+  .logo {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    margin-top: 10px;
+  }
+  .dropdown-menu {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .topic {
+    font-size: 25px;
+  }
+  .box1 {
+    width: 619px;
+    height: 240px;
+    margin: 42px 85px;
+  }
+  .box {
+    width: 192px;
+    height: 240px;
+    border: 1.5px solid #d9d9d9;
+    box-shadow: 0px 2.7px 5.4px #d9d9d9;
+    border-radius: 10px;
+  }
+  .box img {
+    padding: 16px 13.7px;
+    width: 164.8px;
+    height: 187px;
+    border-radius: 10px;
+  }
+  .box p {
+    left: 31px;
+    top: 20px;
+    padding: 8.77px 3.84px;
+    width: 129px;
+    height: 52.67px;
+    font-size: 14px;
+    line-height: 17px;
+    border-radius: 6px;
+  }
+  .category-btn-dropdown {
+    left: 3%;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .clerical {
+    font-size: 40px !important;
+  }
+
+  .hurry-up {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  .login {
+    font-size: 30px !important;
+  }
+
+  .login-email input::placeholder,
+  .login-password input::placeholder {
+    font-size: 16px;
+  }
+  .login-form-wrapper {
+    top: 4%;
+  }
+  .topic {
+    font-size: 25px;
+  }
+  .box1 {
+    width: 619px;
+    height: 240px;
+    margin: 42px 85px;
+  }
+  .box {
+    width: 192px;
+    height: 240px;
+    border: 1.5px solid #d9d9d9;
+    box-shadow: 0px 2.7px 5.4px #d9d9d9;
+    border-radius: 10px;
+  }
+  .box img {
+    padding: 16px 13.7px;
+    width: 164.8px;
+    height: 187px;
+    border-radius: 10px;
+  }
+  .box p {
+    left: 31px;
+    top: 20px;
+    padding: 8.77px 3.84px;
+    width: 129px;
+    height: 52.67px;
+    font-size: 14px;
+    line-height: 17px;
+    border-radius: 6px;
+  }
+  .category-btn-dropdown {
+    left: 3%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .logo {
+    width: 265px;
+    height: 49px;
+    margin-left: 15px;
+  }
+
+  .clerical {
+    font-size: 56px !important;
+  }
+
+  h4 {
+    font-size: 17px !important;
+  }
+
+  .login {
+    font-size: 40px !important;
+  }
+
+  .login-email input::placeholder,
+  .login-password input::placeholder {
+    font-size: 17px;
+  }
+  .login-form-wrapper {
+    top: 60%;
+  }
+  .topic {
+    font-size: 33px;
+  }
+  .box1 {
+    width: 800px;
+    height: 310px;
+    margin: 55px 109px;
+  }
+  .box {
+    width: 248px;
+    height: 310px;
+    border: 2px solid #d9d9d9;
+    box-shadow: 0px 3.5px 7px #d9d9d9;
+    border-radius: 14px;
+  }
+  .box img {
+    padding: 20.6px 17.71px;
+    width: 212.8px;
+    height: 242.5px;
+    border-radius: 14px;
+  }
+  .box p {
+    left: 40px;
+    top: 26px;
+    padding: 11px 5px;
+    width: 167px;
+    height: 68px;
+    font-size: 18px;
+    line-height: 22px;
+    border-radius: 7px;
+  }
+  .logo {
+    margin-left: 15px;
+  }
+  .submit-btn {
+    margin-right: 2.8rem !important;
+  }
+  .category-btn-dropdown {
+    left: 2.5%;
+  }
+}
+
+/*  X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .category-list {
+    margin-left: -30rem;
+  }
+  .form-control {
+    width: 350px;
+  }
+
+  .submit-btn {
+    margin-right: 3rem !important;
+  }
+
+  .nav-item {
+    margin: 0.32em;
+  }
+
+  .clerical {
+    font-size: 58px;
+  }
+
+  .hurry-up {
+    font-size: 20px;
+  }
+
+  .add-btn {
+    margin-left: 5.2rem;
+  }
+
+  h4 {
+    font-size: 18px !important;
+  }
+
+  .login {
+    font-size: 50px !important;
+  }
+
+  .login-email input::placeholder,
+  .login-password input::placeholder {
+    font-size: 18px;
+  }
+  .login-form-wrapper {
+    top: 6%;
+  }
+  .topic {
+    font-size: 40px;
+  }
+  .box1 {
+    width: 967px;
+    height: 376px;
+    margin: 66px 132px;
+  }
+  .box {
+    width: 300px;
+    height: 376px;
+    border: 2.5px solid #d9d9d9;
+    box-shadow: 0px 4px 8px #d9d9d9;
+    border-radius: 17px;
+  }
+  .box img {
+    padding: 25px 21px;
+    width: 257.5px;
+    height: 293.39px;
+    border-radius: 17px;
+  }
+  .box p {
+    left: 48.85px;
+    top: 32.57px;
+    padding: 13.7px 6px;
+    width: 202px;
+    height: 82px;
+    font-size: 22.29px;
+    line-height: 27px;
+    border-radius: 9px;
+  }
+  .category-list {
+    margin-left: -10rem !important;
+  }
+}
+@media (min-width: 1300px) {
+  .submit-btn {
+    margin-right: 6rem !important;
+  }
+}
+
+/*  XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .category-list {
+    margin-left: -40rem;
+  }
+
+  .form-control {
+    width: 450px;
+  }
+
+  .submit-btn {
+    margin-right: 14rem !important;
+  }
+
+  .clerical {
+    font-size: 64px;
+  }
+
+  .hurry-up {
+    font-size: 20px;
+  }
+  .topic {
+    font-size: 50px;
+  }
+  .box1 {
+    width: 1130px;
+    height: 438px;
+    margin: 78px 155px;
+  }
+  .box {
+    width: 350px;
+    height: 438px;
+    border: 3px solid #d9d9d9;
+    box-shadow: 0px 5px 10px #d9d9d9;
+    border-radius: 20px;
+  }
+  .box img {
+    padding: 29px 25px;
+    width: 300px;
+    height: 342.86px;
+    border-radius: 20px;
+  }
+  .box p {
+    left: 57px;
+    top: 38px;
+    padding: 16px 7px;
+    width: 236px;
+    height: 96px;
+    font-size: 26px;
+    line-height: 32px;
+    border-radius: 10.7705px;
+  }
+  .category-list {
+    margin-left: -19rem !important;
+  }
+  .category-btn-dropdown {
+    left: 2%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .category-btn-dropdown {
+    left: 2.5%;
+  }
+}
+@media (min-width: 1600px) {
+  .submit-btn {
+    margin-right: 18rem !important;
+  }
+  .logo {
+    margin-left: 70px;
+  }
+  .category-btn-dropdown {
+    left: 5%;
+  }
+}
+
+@media (min-width: 1700px) {
+  .category-list {
+    margin-left: -25rem !important;
+  }
+  .logo {
+    margin-left: 6.5rem !important;
+  }
+  .category-btn-dropdown {
+    left: 8%;
+  }
+}
+
+@media (min-width: 1800px) {
+  .submit-btn {
+    margin-right: 31.8rem !important;
+  }
+  .logo {
+    margin-left: 6.5rem !important;
+  }
+  .category-btn-dropdown {
+    left: 9%;
+  }
+}
+
+@media (min-width: 1900px) {
+  .submit-btn {
+    margin-right: 18.5rem !important;
+  }
+  .logo {
+    margin-left: 13rem !important;
+  }
+  .category-btn-dropdown {
+    left: 12%;
+  }
+}
