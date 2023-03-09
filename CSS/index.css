@@ -151,7 +151,7 @@ body {
   color: white;
   padding: 0.87em 1em;
   border-radius: 0.7em;
-  transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in-out;
 }
 
 .category-btn:hover {
@@ -296,6 +296,49 @@ body {
   background-color: var(--black-color) !important;
   color: white !important;
 }
+
+.category-btn {
+  position: relative;
+}
+
+.category-btn-dropdown {
+  padding: 0 0.32em;
+  position: absolute;
+  color: black;
+  top: 10rem;
+  left: 5%;
+  z-index: 10;
+  background: white;
+  visibility: hidden;
+  transition: all 100ms ease-in-out;
+}
+
+.show-dropdown {
+  visibility: visible;
+  z-index: 1000;
+}
+
+.category-btn-dropdown div {
+  width: 300px;
+  margin: 0.5em 0;
+  padding: 0.32em;
+  overflow: hidden !important;
+}
+
+.category-btn-dropdown div:hover {
+  outline: 1px solid var(--yellow-color);
+}
+
+.category-btn-dropdown h2 {
+  cursor: pointer !important;
+}
+
+.category-btn-dropdown img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
 /* ---------------------------------------------------Carousel Style Ends--------------------------------------------------- */
 
 /* ---------------------------------------------------Menu --------------------------------------------------- */
@@ -307,6 +350,7 @@ body {
 }
 
 .menu-carousel {
+  margin-top: 1em !important;
   white-space: nowrap;
   overflow: hidden;
   margin-top: 1rem;
@@ -432,6 +476,11 @@ body {
   border-radius: 6px;
   border: none !important;
   margin-left: 2.5rem;
+  transition: 150ms;
+}
+
+.add-btn:hover {
+  scale: 0.95;
 }
 
 .catalog .card {

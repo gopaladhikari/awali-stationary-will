@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>My Wishlist | Awali Stationary WLL</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,21 +18,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-
     <link rel="stylesheet" href="./yourcart.css" />
     <link rel="stylesheet" href="./yourcart_responsive.css" />
   </head>
   <body>
     <div id="body">
-      <!-- Navbar -->
+      <!-- Navbar  -->
       <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
-            <a class="navbar-brand" href="/"
+            <a class="navbar-brand" href="../../index.html"
               ><img src="Images/logo.png" class="img-fluid logo" alt="logo"
             /></a>
             <button
@@ -74,7 +69,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/Pages/wishlist.html">
+                  <a class="nav-link" href="../Wishlist/wishlist.html">
                     <span><img src="./Images/heart.png" alt="" /></span>
                     <span
                       ><img
@@ -86,7 +81,7 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./yourcart.html">
+                  <a class="nav-link" href="../Yourcart/yourcart.html">
                     <span><img src="./Images/cart.png" alt="" /></span>
                     <span
                       ><img
@@ -112,7 +107,7 @@
         </nav>
       </header>
       <!-- Navbar  Ends -->
-
+      <!-- ================================================================================================================= -->
       <!-- Category  -->
       <div class="container-fluid pt-2">
         <div class="row mx-auto">
@@ -123,11 +118,53 @@
               <img src="./Images/menu.png" class="me-2" alt="" /> Category
               <img src="./Images/downArrow.png" class="ms-2" alt="" />
             </button>
-            <ul class="d-flex gap-3 gap-lg-4 category-list">
-              <li><a href="/"> HOME </a></li>
-              <li><a href=""> NOVELTY </a></li>
-              <li><a href=""> CHNCELLERY </a></li>
-              <li><a href=""> DISCOUNT </a></li>
+            <div class="category-btn-dropdown">
+              <div class="d-flex gap-3 align-items-center">
+                <img src="./Images/menu2.png" alt="" />
+                <h2>Office Supplies</h2>
+              </div>
+              <div class="d-flex gap-3 align-items-center">
+                <img src="./Images/menu4.png" alt="" />
+                <h2>Papper Products</h2>
+              </div>
+              <div class="d-flex gap-3 align-items-center">
+                <img src="./Images/menu10.png" alt="" />
+                <h2>Ink & Tower</h2>
+              </div>
+              <div class="d-flex gap-3 align-items-center">
+                <img src="./Images/menu2.png" alt="" />
+                <h2>Office Equipment</h2>
+              </div>
+              <div class="d-flex gap-3 align-items-center">
+                <img src="./Images/menu4.png" alt="" />
+                <h2>Technology</h2>
+              </div>
+              <div class="d-flex gap-3 align-items-center">
+                <img src="./Images/menu10.png" alt="" />
+                <h2>Office Furniture</h2>
+              </div>
+              <div class="d-flex gap-3 align-items-center">
+                <img src="./Images/menu2.png" alt="" />
+                <h2>Facility</h2>
+              </div>
+            </div>
+            <ul class="d-flex gap-3 gap-xl-4 category-list">
+              <li><a href="../../index.html"> HOME </a></li>
+              <li>
+                <a href="../DealsOfTheDay/dealsoftheday.html">
+                  DEALS OF THE DAY
+                </a>
+              </li>
+              <li>
+                <a href="../CategoryToBag/categorytobag.html">
+                  CATEGORY OF THE BAG
+                </a>
+              </li>
+              <li>
+                <a href="../DesktopEssential/desktopessential.html">
+                  DESKTOP ESSENTIAL
+                </a>
+              </li>
               <li><a href="../ContactUs/contact.html"> CONTACT US </a></li>
               <li><a href="../AboutUs/about.html">ABOUT US </a></li>
             </ul>
@@ -142,7 +179,9 @@
       </div>
       <hr />
       <!-- Category Ends -->
+      <!-- ================================================================================================================= -->
 
+      <!-- ================================================================================================================= -->
       <!-- Footer -->
       <div class="container-fluid mt-5">
         <div class="row mx-auto">
@@ -199,13 +238,215 @@
           &copy; Copyright Awali Starionary WLL 2023. All rights reserved.
         </p>
       </div>
+      <!-- Footer Ends -->
     </div>
-    <!-- Footer Ends -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./yourcart.js"></script>
+
+    <!-- ================================================================================================================= -->
+
+    <!-- Login Popup-->
+    <div class="container-fluid login-form-wrapper">
+      <div class="row mx-auto">
+        <div class="col-12 p-0">
+          <div class="row">
+            <div class="col-md-8 mx-auto text-center">
+              <form
+                action=""
+                onsubmit="submitHandler(event)"
+                id="loginForm"
+                class="login-form"
+              >
+                <div class="d-flex justify-content-end pt-4">
+                  <img
+                    src="./Images/close-btn.png"
+                    onclick="closeLogin()"
+                    class="close-btn"
+                    alt=""
+                  />
+                </div>
+                <h1 class="login text-center">Login</h1>
+                <h4 class="my-3">
+                  Don't you have an account?
+                  <button
+                    onclick="openRegister()"
+                    type="button"
+                    class="register-here"
+                  >
+                    Register here
+                  </button>
+                </h4>
+                <div class="login-email d-flex align-items-center">
+                  <img src="./Images/login-email.png" alt="" />
+                  <input
+                    id="email"
+                    type="email"
+                    class="w-100"
+                    value=""
+                    placeholder="Email Id"
+                  />
+                </div>
+                <div class="login-password d-flex align-items-center">
+                  <img src="./Images/login-password.png" alt="" />
+                  <input
+                    id="password"
+                    type="password"
+                    class="w-100"
+                    value=""
+                    placeholder="Password"
+                  />
+                </div>
+                <div class="form-submit">
+                  <button class="submit">Login</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Login Popup Ends-->
+    <!-- ================================================================================================================= -->
+
+    <!-- Register Pop up -->
+    <div class="container-fluid p-0">
+      <div class="row mx-auto p-0">
+        <div class="col-lg-8 p-0 mx-auto text-center">
+          <form action="" id="registration-form" class="reistration-form py-5">
+            <div class="d-flex justify-content-end pt-4">
+              <img
+                src="./Images/close-btn.png"
+                onclick="closeRegister()"
+                class="close-btn"
+                alt=""
+              />
+            </div>
+            <h3 class="text-center login mt-2 mb-5">Register</h3>
+            <h4 class="text-center my-3 already">
+              Already have an account?
+              <span class="register-here">Log In</span>
+            </h4>
+            <div class="facebookandgoogle">
+              <div class="d-flex justify-content-center p-0 gap-4">
+                <div
+                  class="google-divs d-flex gap-2 align-items-center justify-content-center"
+                >
+                  <img src="./Images/Google.png" alt="" />
+                  <h2 class="mt-2">Sign up with Google</h2>
+                </div>
+                <div
+                  class="facebook-divs d-flex gap-2 align-items-center justify-content-center"
+                >
+                  <img src="./Images/Facebook.png" alt="" />
+                  <h2 class="mt-2">Sign up with Facebook</h2>
+                </div>
+              </div>
+            </div>
+            <!-- ========================================= -->
+            <div class="mobile_singin_option">
+              <div class="d-flex align-items-center flex-column">
+                <div
+                  class="google-divs d-flex align-items-center justify-content-center gap-2"
+                >
+                  <img src="./Images/Google.png" alt="" />
+                  <h6 class="mt-2">Sign up with Google</h6>
+                </div>
+                <div
+                  class="facebook-divs d-flex align-items-center justify-content-center gap-1 my-2"
+                >
+                  <img src="./Images/Facebook.png" alt="" />
+                  <h6 class="mt-2">Sign up with Facebook</h6>
+                </div>
+              </div>
+            </div>
+            <div
+              class="text-center my-1 d-flex justify-content-center align-items-center gap-2"
+            >
+              <img src="./Images/Line 41.png" class="lines" alt="" />
+              <h4 class="my-3">OR</h4>
+              <img src="./Images/Line 41.png" class="lines" alt="" />
+            </div>
+            <div>
+              <div class="d-flex align-items-center gap-3 wrapper py-3">
+                <img src="./Images/login-email.png" alt="" />
+                <input
+                  class=""
+                  type="email"
+                  name="email"
+                  id="reg-email"
+                  placeholder="Email id"
+                />
+              </div>
+            </div>
+            <div>
+              <div class="d-flex align-items-center gap-3 wrapper mt-4 py-3">
+                <img src="./Images/login-password.png" alt="" />
+                <input
+                  class=""
+                  type="password"
+                  name="password"
+                  id="reg-password"
+                  placeholder="Password"
+                />
+              </div>
+            </div>
+            <div>
+              <div
+                class="d-flex justify-content-between align-items-center gap-3 wrapper mt-4 py-3"
+              >
+                <div class="d-flex align-items-center gap-3">
+                  <img src="./Images/login-password.png" alt="" />
+                  <input
+                    type="password"
+                    name="password"
+                    id="confirm-password"
+                    placeholder="Confirm Password"
+                  />
+                </div>
+
+                <img
+                  style="cursor: pointer"
+                  onclick="togglePassword()"
+                  src="./Images/eye.png"
+                  class=""
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div>
+              <div class="d-flex align-items-center gap-4 wrapper mt-4 py-3">
+                <img src="./Images/phone.png" alt="" />
+                <input
+                  class=""
+                  type="text"
+                  name="phone_number"
+                  id="phone-number"
+                  value=""
+                  placeholder="Phone Number"
+                />
+              </div>
+            </div>
+            <div class="error" id="error"></div>
+            <div>
+              <div
+                class="my-3 d-flex align-items-center gap-2 justify-content-center"
+              >
+                <input id="radio" type="radio" />
+                <label for="radio">I agree with terms and condition</label>
+              </div>
+            </div>
+            <div>
+              <button type="submit" class="register-btn">Register</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Register Pop up Ends -->
   </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./yourcart.js"></script>
 </html>

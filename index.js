@@ -100,7 +100,6 @@ reistrationForm.onsubmit = (event) => {
 
 // Menu
 const carousel = document.querySelector(".menu-carousel");
-
 let icons = document.querySelectorAll(".i");
 let firstImg = carousel.querySelectorAll("img")[0];
 let firstImgWidth = firstImg.clientWidth + 100;
@@ -110,3 +109,10 @@ icons.forEach((icon) => {
     carousel.scrollLeft += icon.id === "right" ? firstImgWidth : -firstImgWidth;
   });
 });
+
+const categoryBtn = document.querySelector(".category-btn");
+const categoryDropdown = document.querySelector(".category-btn-dropdown");
+
+categoryBtn.onclick = () => {
+  categoryDropdown.classList.toggle("show-dropdown");
+};

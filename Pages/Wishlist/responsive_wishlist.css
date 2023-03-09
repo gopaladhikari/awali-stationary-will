@@ -1,0 +1,240 @@
+@media (max-width: 991px) {
+  .category-list {
+    display: none !important;
+  }
+
+  .logo {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    margin-top: 10px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .card-images {
+    text-align: center;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .clerical {
+    font-size: 40px !important;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  .login {
+    font-size: 30px !important;
+  }
+
+  .login-email input::placeholder,
+  .login-password input::placeholder {
+    font-size: 16px;
+  }
+  .login-form-wrapper {
+    top: 4%;
+  }
+  .facebookandgoogle {
+    display: block !important;
+  }
+  .mobile_singin_option {
+    display: none !important;
+  }
+
+  .lines {
+    width: 240px;
+  }
+
+  .category-btn-dropdown {
+    left: 3%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .category-btn-dropdown {
+    left: 2.5%;
+  }
+  .logo {
+    width: 265px;
+    height: 49px;
+  }
+
+  h4 {
+    font-size: 17px !important;
+  }
+
+  .login {
+    font-size: 40px !important;
+  }
+
+  .login-email input::placeholder,
+  .login-password input::placeholder {
+    font-size: 17px;
+  }
+
+  .login-form-wrapper {
+    top: 60%;
+  }
+
+  .logo {
+    margin-left: 15px;
+  }
+  .submit-btn {
+    margin-right: 2.8rem !important;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+}
+
+/*  X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .form-control {
+    width: 350px;
+  }
+
+  .submit-btn {
+    margin-right: 3rem !important;
+  }
+
+  .nav-item {
+    margin: 0.32em;
+  }
+
+  .catalog .card {
+    width: 13rem;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  h4 {
+    font-size: 18px !important;
+  }
+
+  .login {
+    font-size: 50px !important;
+  }
+
+  .login-email input::placeholder,
+  .login-password input::placeholder {
+    font-size: 18px;
+  }
+  .login-form-wrapper {
+    top: 6%;
+  }
+
+  .category-list {
+    margin-left: -10rem !important;
+  }
+}
+
+@media (min-width: 1300px) {
+  .submit-btn {
+    margin-right: 6rem !important;
+  }
+}
+
+/*  XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .category-btn-dropdown {
+    left: 2%;
+  }
+  .form-control {
+    width: 450px;
+  }
+
+  .submit-btn {
+    margin-right: 14rem !important;
+  }
+
+  .catalog .card {
+    width: 14rem;
+  }
+
+  .clerical {
+    font-size: 64px;
+  }
+
+  .hurry-up {
+    font-size: 20px;
+  }
+
+  .deals-of-the-week1 {
+    margin-right: 35rem !important;
+  }
+  .category-list {
+    margin-left: -19rem !important;
+  }
+  h1 {
+    font-size: 42px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .category-btn-dropdown {
+    left: 2.5%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .submit-btn {
+    margin-right: 18rem !important;
+  }
+  .logo {
+    margin-left: 70px;
+  }
+  .category-btn-dropdown {
+    left: 5%;
+  }
+}
+
+@media (min-width: 1700px) {
+  .logo {
+    margin-left: 6.5rem !important;
+  }
+  .category-list {
+    margin-left: -25rem !important;
+  }
+  .category-btn-dropdown {
+    left: 8%;
+  }
+}
+@media (min-width: 1800px) {
+  .submit-btn {
+    margin-right: 31.8rem !important;
+  }
+  .logo {
+    margin-left: 6.5rem !important;
+  }
+  .category-btn-dropdown {
+    left: 9%;
+  }
+}
+
+@media (min-width: 1900px) {
+  .submit-btn {
+    margin-right: 18.5rem !important;
+  }
+  .logo {
+    margin-left: 13rem !important;
+  }
+  .category-btn-dropdown {
+    left: 12%;
+  }
+}

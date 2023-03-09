@@ -17,10 +17,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
 
     <link rel="stylesheet" href="./CSS/index.css" />
     <link rel="stylesheet" href="./CSS/index_responsive.css" />
@@ -31,7 +27,7 @@
       <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
-            <a class="navbar-brand" href="/"
+            <a class="navbar-brand" href="./index.html"
               ><img src="Images/logo.png" class="img-fluid logo" alt="logo"
             /></a>
             <button
@@ -73,7 +69,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/Pages/wishlist.html">
+                  <a class="nav-link" href="./Pages/Wishlist/wishlist.html">
                     <span><img src="./Images/heart.png" alt="" /></span>
                     <span
                       ><img
@@ -122,11 +118,45 @@
               <img src="./Images/menu.png" class="me-2" alt="" /> Category
               <img src="./Images/downArrow.png" class="ms-2" alt="" />
             </button>
-            <ul class="d-flex gap-3 gap-lg-4 category-list">
-              <li><a href="/"> HOME </a></li>
-              <li><a href=""> NOVELTY </a></li>
-              <li><a href=""> CHNCELLERY </a></li>
-              <li><a href=""> DISCOUNT </a></li>
+            <div class="category-btn-dropdown">
+              <div class="d-flex gap-3 align-items-center">
+                <img src="./Images/menu2.png" alt="" />
+                <h2>Office Supplies</h2>
+              </div>
+              <div class="d-flex gap-3 align-items-center">
+                <img src="./Images/menu4.png" alt="" />
+                <h2>Papper Products</h2>
+              </div>
+              <div class="d-flex gap-3 align-items-center">
+                <img src="./Images/menu10.png" alt="" />
+                <h2>Ink & Tower</h2>
+              </div>
+              <div class="d-flex gap-3 align-items-center">
+                <img src="./Images/menu2.png" alt="" />
+                <h2>Office Equipment</h2>
+              </div>
+              <div class="d-flex gap-3 align-items-center">
+                <img src="./Images/menu4.png" alt="" />
+                <h2>Technology</h2>
+              </div>
+              <div class="d-flex gap-3 align-items-center">
+                <img src="./Images/menu10.png" alt="" />
+                <h2>Office Furniture</h2>
+              </div>
+              <div class="d-flex gap-3 align-items-center">
+                <img src="./Images/menu2.png" alt="" />
+                <h2>Facility</h2>
+              </div>
+            </div>
+            <ul class="d-flex gap-3 gap-xl-4 category-list">
+              <li><a href="./index.html"> HOME </a></li>
+              <li><a href="./index.html"> DEALS OF THE DAY </a></li>
+              <li>
+                <a href="./Pages/CategoryToBag/categorytobag.html">
+                  CATEGORY OF THE BAG
+                </a>
+              </li>
+              <li><a href="./index.html"> DESKTOP ESSENTIAL </a></li>
               <li><a href="./Pages/ContactUs/contact.html"> CONTACT US </a></li>
               <li><a href="./Pages/AboutUs/about.html">ABOUT US </a></li>
             </ul>
@@ -274,7 +304,7 @@
           <div class="col-12 p-0">
             <div class="menu-wrapper">
               <div class="heading">
-                <h1>Menu</h1>
+                <h1 class="m-0 p-0">Menu</h1>
                 <div class="arrows">
                   <div id="left" class="left-arrow i">
                     <i class="fa-solid fa-arrow-left"></i>
@@ -284,7 +314,7 @@
                   </div>
                 </div>
               </div>
-              <div class="menu-carousel">
+              <div class="menu-carousel m-0 p-0">
                 <img src="./Images/menu1.png" class="p-0" alt="" />
                 <img src="./Images/menu2.png" alt="" />
                 <img src="./Images/menu3.png" alt="" />

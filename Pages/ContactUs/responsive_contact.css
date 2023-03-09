@@ -2,6 +2,10 @@
   .category-list {
     display: none !important;
   }
+
+  .logo {
+    margin-left: 15px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -48,14 +52,17 @@
   .lines {
     width: 240px;
   }
+
+  .category-btn-dropdown {
+    left: 3%;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .category-list {
-    margin-left: -15rem;
+  .category-btn-dropdown {
+    left: 2.5%;
   }
-
   .logo {
     width: 265px;
     height: 49px;
@@ -72,10 +79,20 @@
   .login-form-wrapper {
     top: 60%;
   }
+  .submit-btn {
+    margin-right: 2.8rem !important;
+  }
+  .logo {
+    margin-left: 15px;
+  }
 }
 
 /*  X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .submit-btn {
+    margin-right: 3rem !important;
+  }
+
   h1 {
     font-size: 48px;
   }
@@ -97,15 +114,13 @@
   .contact-form input::placeholder {
     font-size: 15px;
   }
-  .category-list {
-    margin-left: -30rem;
-  }
+
   .form-control {
     width: 350px;
   }
 
   .submit-btn {
-    margin-right: 5rem !important;
+    margin-right: 3rem !important;
   }
 
   .nav-item {
@@ -123,20 +138,31 @@
   .login-form-wrapper {
     top: 6%;
   }
+  .category-list {
+    margin-left: -10rem !important;
+  }
 }
 
 /*  XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
-  .category-list {
-    margin-left: -40rem;
+  .category-btn-dropdown {
+    left: 2%;
   }
-
   .form-control {
     width: 450px;
   }
 
+  .category-list {
+    margin-left: -19rem !important;
+  }
   .submit-btn {
-    margin-right: 10rem !important;
+    margin-right: 14rem !important;
+  }
+}
+
+@media (min-width: 1500px) {
+  .category-btn-dropdown {
+    left: 2.5%;
   }
 }
 
@@ -144,22 +170,45 @@
   .submit-btn {
     margin-right: 18rem !important;
   }
-}
-
-@media (min-width: 1700px) {
-  .submit-btn {
-    margin-right: 26rem !important;
+  .logo {
+    margin-left: 70px;
+  }
+  .category-btn-dropdown {
+    left: 5%;
   }
 }
 
+@media (min-width: 1700px) {
+  .logo {
+    margin-left: 6.5rem !important;
+  }
+  .category-list {
+    margin-left: -25rem !important;
+  }
+  .category-btn-dropdown {
+    left: 8%;
+  }
+}
 @media (min-width: 1800px) {
   .submit-btn {
-    margin-right: 35rem !important;
+    margin-right: 31.8rem !important;
+  }
+  .logo {
+    margin-left: 6.5rem !important;
+  }
+  .category-btn-dropdown {
+    left: 9%;
   }
 }
 
 @media (min-width: 1900px) {
   .submit-btn {
-    margin-right: 38rem !important;
+    margin-right: 18.5rem !important;
+  }
+  .logo {
+    margin-left: 13rem !important;
+  }
+  .category-btn-dropdown {
+    left: 12%;
   }
 }

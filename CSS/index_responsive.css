@@ -82,14 +82,14 @@
   .lines {
     width: 240px;
   }
+
+  .category-btn-dropdown {
+    left: 3%;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .category-list {
-    margin-left: -15rem;
-  }
-
   .logo {
     width: 265px;
     height: 49px;
@@ -143,13 +143,14 @@
   .submit-btn {
     margin-right: 2.8rem !important;
   }
+
+  .category-btn-dropdown {
+    left: 2.5%;
+  }
 }
 
 /*  X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .category-list {
-    margin-left: -30rem;
-  }
   .form-control {
     width: 350px;
   }
@@ -201,6 +202,10 @@
   .login-form-wrapper {
     top: 6%;
   }
+
+  .category-list {
+    margin-left: -10rem !important;
+  }
 }
 
 @media (min-width: 1300px) {
@@ -211,10 +216,6 @@
 
 /*  XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
-  .category-list {
-    margin-left: -40rem;
-  }
-
   .form-control {
     width: 450px;
   }
@@ -238,6 +239,18 @@
   .deals-of-the-week1 {
     margin-right: 35rem !important;
   }
+  .category-list {
+    margin-left: -19rem !important;
+  }
+  .category-btn-dropdown {
+    left: 2%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .category-btn-dropdown {
+    left: 2.5%;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -247,14 +260,20 @@
   .logo {
     margin-left: 70px;
   }
+  .category-btn-dropdown {
+    left: 5%;
+  }
 }
 
 @media (min-width: 1700px) {
-  .submit-btn {
-    margin-right: 31.8rem !important;
-  }
   .logo {
     margin-left: 6.5rem !important;
+  }
+  .category-list {
+    margin-left: -25rem !important;
+  }
+  .category-btn-dropdown {
+    left: 8%;
   }
 }
 @media (min-width: 1800px) {
@@ -264,6 +283,9 @@
   .logo {
     margin-left: 6.5rem !important;
   }
+  .category-btn-dropdown {
+    left: 9%;
+  }
 }
 
 @media (min-width: 1900px) {
@@ -272,5 +294,8 @@
   }
   .logo {
     margin-left: 13rem !important;
+  }
+  .category-btn-dropdown {
+    left: 12%;
   }
 }
