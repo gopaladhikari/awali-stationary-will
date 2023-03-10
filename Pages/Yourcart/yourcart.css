@@ -24,7 +24,7 @@ font-family: 'Libre Bodoni', serif;
 }
 
 h1 {
-  font-size: 22px;
+  font-size: 40px;
   font-family: "Inter", sans-serif;
   font-weight: 600;
 }
@@ -36,19 +36,19 @@ h2 {
 }
 
 h3 {
-  font-family: "Inter";
+  font-family: "Montserrat";
   font-style: normal;
-  font-weight: 600;
-  font-size: 18px !important;
-  line-height: 15px;
-  color: #000000;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 29px;
+  color: #313131;
 }
 
 h4 {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 15px !important;
+  font-size: 14px !important;
   color: #9f9f9f !important;
 }
 
@@ -181,6 +181,104 @@ body {
 }
 
 /* ---------------------------------------------------Navbar Style Ends--------------------------------------------------- */
+/* ---------------------------------------------------Cart Style --------------------------------------------------- */
+
+.y {
+  color: var(--yellow-color);
+}
+
+.main {
+  background: rgba(240, 208, 40, 0.05);
+  border-radius: 33px;
+}
+
+.Item {
+  width: 600px;
+}
+.price,
+.Shipping,
+.Quantity,
+.Shipping-cost,
+.Price {
+  width: 250px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading-wrapper {
+  border-bottom: 1px solid #9d9d9d;
+}
+.desc {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ff5c5c;
+}
+
+.remove {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #bcbcbc;
+  background: transparent;
+  outline: none !important;
+  border: none !important;
+}
+
+.add,
+.sub {
+  width: 30px;
+  height: 30px;
+  background: #ffd600;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#quantity {
+  width: 20px;
+  background: transparent;
+  outline: none;
+  border: none;
+  pointer-events: none;
+}
+
+.payment {
+  margin-top: -0.5rem;
+}
+
+.continue {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  background: #ffdb1c;
+  border-radius: 50px;
+  padding: 0.5em;
+  border: none;
+  color: #000000;
+  transition: 300ms;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.continue a:hover {
+  color: black;
+}
+
+.continue:hover {
+  scale: 0.95;
+}
+
+/* ---------------------------------------------------Cart Style Ends--------------------------------------------------- */
 
 /* ---------------------------------------------------Category Style --------------------------------------------------- */
 
@@ -493,4 +591,149 @@ body {
   text-align: left;
   margin: 1em auto;
   color: #ff3333;
+}
+
+/* =============================Check out ==================================== */
+
+.desktop-payment {
+  display: none;
+}
+
+.express {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: #171717;
+  margin-bottom: -0.87rem;
+}
+
+.checkout-logo {
+  outline: 1px solid rgba(128, 128, 128, 0.568);
+  position: relative;
+  z-index: 10;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+
+.checkout-logo::after {
+  content: "Checkout Express";
+  position: absolute;
+  font-size: 18px;
+  top: -23%;
+  left: 50%;
+  padding: 0;
+  padding: 10px;
+  transform: translateX(-50%);
+  background: rgba(240, 208, 40, 0.05);
+
+  height: 40px;
+}
+
+.checkout-row {
+  border-radius: 33px;
+  border: 1px solid #000000;
+  height: 1000px;
+}
+
+.checkout-firstHalf {
+  background: rgba(240, 208, 40, 0.05);
+}
+
+.or-con {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #9f9f9f;
+}
+
+.checkout-line {
+  margin-top: 0.5rem;
+  width: 20%;
+  height: 1px;
+}
+
+#email {
+  outline: none;
+  border: 1px solid #000000;
+  background: rgba(240, 208, 40, 0.05);
+  padding: 0.3em 1em;
+}
+
+#email::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.email-label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 1em 0;
+  color: #000000;
+}
+
+.checkbox-label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #adadad;
+  margin-top: 0.87em;
+}
+
+.address {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  margin-top: 2em;
+}
+/* =============================Check out Ends ================================================================= */
+
+.form__select,
+.form__input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-bottom: 10px;
+  background: rgba(240, 208, 40, 0.05) !important;
+}
+
+.form__select:focus,
+.form__input:focus {
+  border-color: #4caf50;
+}
+
+.form__select .select2-results__option {
+  background: rgba(240, 208, 40, 0.05) !important;
+}
+
+.form__submit {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form__submit:hover {
+  background-color: #3e8e41;
 }

@@ -104,3 +104,47 @@ const categoryDropdown = document.querySelector(".category-btn-dropdown");
 categoryBtn.onclick = () => {
   categoryDropdown.classList.toggle("show-dropdown");
 };
+
+// ==========================================Cart Section =========================================
+
+const shippingFee = 15;
+const price = 2160;
+
+let addBtn = document.querySelectorAll(".add");
+let subBtn = document.querySelectorAll(".sub");
+let quantity = document.querySelectorAll("#quantity");
+let shipPrice = document.querySelectorAll(".ship-price");
+let itemPrice = document.querySelectorAll(".Price");
+
+let subtotal = document.querySelector(".subtotal");
+let estShipped = document.querySelector(".estimated-shipping");
+let total = document.querySelector(".total");
+
+let num = addBtn.forEach((btn, i) => {
+  btn.onclick = () => {
+    quantity[i].value = parseInt(quantity[i].value) + 1;
+    shipPrice[i].innerHTML = `$ ${
+      parseInt(quantity[i].value) * shippingFee
+    }.00`;
+    itemPrice[i].innerHTML = `$ ${parseInt(quantity[i].value) * price}.00`;
+  };
+});
+
+subBtn.forEach((btn, i) => {
+  btn.onclick = () => {
+    if (parseInt(quantity[i].value) > 0) {
+      quantity[i].value = parseInt(quantity[i].value) - 1;
+      shipPrice[i].innerHTML = `$ ${
+        parseInt(quantity[i].value) * shippingFee
+      }.00`;
+      itemPrice[i].innerHTML = `$ ${parseInt(quantity[i].value) * price}.00`;
+    }
+  };
+});
+
+// ==========================================Cart Section  Ends=========================================
+$(document).ready(function () {
+  $(".custom-select").select2({
+    dropdownCssClass: "custom-dropdown",
+  });
+});

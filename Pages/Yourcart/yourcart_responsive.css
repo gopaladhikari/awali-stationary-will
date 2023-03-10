@@ -60,6 +60,11 @@
   .category-btn-dropdown {
     left: 3%;
   }
+  .checkout-line {
+    margin-top: 0.5rem;
+    width: 28.5% !important;
+    height: 1px;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -98,6 +103,23 @@
   }
   .submit-btn {
     margin-right: 2.8rem !important;
+  }
+  .desktop-payment {
+    display: block;
+  }
+  .mobile-payment {
+    display: none;
+  }
+  .checkout-line {
+    margin-top: 0.5rem;
+    width: 100% !important;
+    height: 1px;
+  }
+
+  .checkout-line {
+    margin-top: 0.5rem;
+    width: 18% !important;
+    height: 1px;
   }
 }
 
@@ -142,6 +164,11 @@
   .category-list {
     margin-left: -10rem !important;
   }
+  .checkout-line {
+    margin-top: 0.5rem;
+    width: 22% !important;
+    height: 1px;
+  }
 }
 
 @media (min-width: 1300px) {
@@ -181,6 +208,9 @@
   .category-list {
     margin-left: -19rem !important;
   }
+  .checkout-line {
+    width: 25% !important;
+  }
 }
 
 @media (min-width: 1500px) {
@@ -198,6 +228,11 @@
   }
   .category-btn-dropdown {
     left: 5%;
+  }
+  .checkout-line {
+    margin-top: 0.5rem;
+    width: 27% !important;
+    height: 1px;
   }
 }
 
