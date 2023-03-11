@@ -425,6 +425,8 @@ body {
   max-width: 440px;
   border-bottom: 1.66667px solid #f0d028;
   margin: 1.5rem auto;
+  background-color: transparent !important;
+  outline: none !important;
 }
 
 .login-email input,
@@ -688,14 +690,14 @@ body {
   height: 1px;
 }
 
-#email {
+.checout-row #email {
   outline: none;
   border: 1px solid #000000;
   background: rgba(240, 208, 40, 0.05);
   padding: 0.3em 1em;
 }
 
-#email::placeholder {
+.cehckout-row #email::placeholder {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -828,4 +830,19 @@ body {
   left: 80%;
 }
 
+.order-sec {
+  padding: 1em 0;
+  max-width: 800px;
+  background-color: white;
+  outline: 1px solid #000000;
+  border-radius: 15px;
+}
+
+.order-logo {
+  max-width: 320px;
+}
+
+.order-success-logo {
+  max-width: 100px;
+}
 /* =============================Check out Ends ================================================================= */
