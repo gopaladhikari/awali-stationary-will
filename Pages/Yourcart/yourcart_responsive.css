@@ -69,6 +69,14 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .mobile-close-btn {
+    display: none !important;
+  }
+
+  .desktop-close-btn {
+    display: block;
+  }
+
   .category-btn-dropdown {
     left: 2.5%;
   }

@@ -353,7 +353,13 @@
                 <h2 class="total">$ 0</h2>
               </div>
               <div class="text-center">
-                <button class="continue">Secure Checkout</button>
+                <button
+                  type="button"
+                  class="continue"
+                  onclick="displayPayment()"
+                >
+                  Secure Checkout
+                </button>
               </div>
             </div>
           </div>
@@ -623,7 +629,7 @@
 
     <div class="container-fluid">
       <div class="row checkout-row mx-auto">
-        <div class="col-lg-6 checkout-firstHalf">
+        <div class="col-lg-6 p-4 checkout-firstHalf">
           <div class="row">
             <div
               class="col-lg2 d-flex justify-content-between align-items-center"
@@ -631,6 +637,11 @@
               <img
                 src="./Images/checkout-logo.png"
                 class="img-fluid checkout-logo-icon"
+                alt=""
+              />
+              <img
+                src="./Images/close-btn.png"
+                class="img-fluid mobile-close-btn"
                 alt=""
               />
               <h1 class="text-center desktop-payment">
@@ -784,9 +795,78 @@
           </div>
           <hr />
         </div>
-        <div class="col-lg-6">
-          <div class="d-flex justify-content-end">
-            <img src="./Images/close-btn.png" class="img-fluid" alt="" />
+        <div class="col-lg-6 p-4">
+          <div class="row">
+            <div class="col-12">
+              <div class="d-flex justify-content-end">
+                <img
+                  src="./Images/close-btn.png"
+                  class="img-fluid desktop-close-btn"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-12 py-5">
+              <div
+                class="d-flex align-items-center border border-dark border-top-0 border-start-0 border-end-0 justify-content-center pb-5 w-100 justify-content-between"
+              >
+                <div class="d-flex align-items-center cart-num-wrap gap-3">
+                  <img src="./Images/item.png" class="img-fluid" alt="" />
+                  <h5>Product name</h5>
+                  <h2 class="cart-num">1</h2>
+                </div>
+                <div>
+                  <h5>$105.00</h5>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-12 d-flex flex-column align-items-center justify-content-center"
+            >
+              <div
+                class="d-flex gap-4 align-items-center border border-dark border-top-0 border-start-0 border-end-0 justify-content-center pb-5 w-100"
+              >
+                <input
+                  type="text"
+                  class="gift-card"
+                  name=""
+                  placeholder="Gift card"
+                  id=""
+                />
+                <button class="apply">APPLY</button>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div
+                class="border border-dark border-top-0 border-start-0 border-end-0 py-5 w-100"
+              >
+                <div class="d-flex justify-content-between align-items-center">
+                  <h4 class="subtotal">Subtotal</h4>
+                  <h5>$105.00</h5>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <h6 class="w-50">
+                    ** Expedited orders cannot be shipped or delivered on
+                    weekends/holidays not can they be shipped to a PO Box.
+                  </h6>
+                  <h6>Calculated at next step</h6>
+                </div>
+              </div>
+
+              <div
+                class="col-12 py-4 d-flex justify-content-between align-items-center"
+              >
+                <h5>Total</h5>
+                <h5>USD $105.00</h5>
+              </div>
+            </div>
+
+            <div class="col-12 chat-wrap">
+              <button class="chat">Chat</button>
+              <div class="green"></div>
+            </div>
           </div>
         </div>
       </div>
