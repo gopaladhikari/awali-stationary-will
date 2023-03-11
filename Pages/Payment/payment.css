@@ -1,0 +1,373 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"); /* Montserrat   */
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap"); /* Inter */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap");
+/*
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Libre Bodoni', serif;
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --yellow-color: #f0d028;
+  --red-color: #f02828;
+  --blue-color: #0071dc;
+  --black-color: #000000;
+  --white-color: #f6f6f6;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600 !important;
+}
+
+h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 29px;
+  color: #313131;
+}
+
+h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px !important;
+  color: #9f9f9f !important;
+}
+
+h6 {
+  font-size: 14px;
+  font-family: "Montserrat";
+}
+
+body {
+  background-color: var(--white-color);
+}
+
+.row {
+  max-width: 1496px;
+}
+/* ================================================================================================================= */
+
+/* =============================Check out ==================================== */
+
+.desktop-payment {
+  display: none;
+}
+
+.desktop-close-btn {
+  display: none;
+  cursor: pointer;
+}
+
+.express {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: #171717;
+  margin-bottom: -0.87rem;
+}
+
+.checkout-logo {
+  outline: 1px solid rgba(128, 128, 128, 0.568);
+  position: relative;
+  z-index: 10;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+
+.checkout-logo::after {
+  content: "Checkout Express";
+  position: absolute;
+  font-size: 18px;
+  top: -23%;
+  left: 50%;
+  padding: 0;
+  padding: 10px;
+  transform: translateX(-50%);
+  background: rgba(240, 208, 40, 0.05);
+
+  height: 40px;
+}
+
+.checkout-row {
+  border-radius: 33px;
+  border: 1px solid #000000;
+  transition: 300ms;
+}
+.show-payment {
+  scale: 1;
+}
+
+.cart-num-wrap {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.cart-num {
+  position: absolute;
+  top: -10px;
+  left: 40%;
+  background-color: white !important;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+.checkout-firstHalf {
+  background: rgba(240, 208, 40, 0.05);
+}
+
+.or-con {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #9f9f9f;
+}
+
+.checkout-line {
+  margin-top: 0.5rem;
+  width: 20%;
+  height: 1px;
+}
+
+#email {
+  outline: none;
+  border: 1px solid #000000;
+  background: rgba(240, 208, 40, 0.05);
+  padding: 0.3em 1em;
+}
+
+.cehckout-row #email::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.email-label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 1em 0;
+  color: #000000;
+}
+
+.checkbox-label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #adadad;
+  margin-top: 0.87em;
+}
+
+.address {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  margin-top: 2em;
+}
+
+.form__select,
+.form__input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-bottom: 10px;
+  background: rgba(240, 208, 40, 0.05) !important;
+}
+
+.form__select:focus,
+.form__input:focus {
+  border-color: #4caf50;
+}
+
+.form__select .select2-results__option {
+  background: rgba(240, 208, 40, 0.05) !important;
+}
+
+.form__submit {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form__submit:hover {
+  background-color: #3e8e41;
+}
+
+.gift-card {
+  box-sizing: border-box;
+  width: 396px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.32em 1em;
+  outline: none;
+  border: none;
+  border: 2px solid #000000;
+  border-radius: 33px;
+}
+
+.apply {
+  font-family: "Montserrat";
+  background: #fffcea;
+  border-radius: 10px;
+  font-style: normal;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #f0d028;
+  transition: 200ms linear;
+  padding: 0.5em 0.8em;
+}
+
+.continue {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  background: #ffdb1c;
+  border-radius: 50px;
+  padding: 0.5em;
+  border: none;
+  color: #000000;
+  transition: 300ms;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.continue a:hover {
+  color: black;
+}
+
+.continue:hover {
+  scale: 0.95;
+}
+
+.apply:hover {
+  background-color: #f0d028;
+  color: black;
+}
+
+.chat-wrap {
+  position: relative;
+  height: 220px;
+}
+
+.chat {
+  position: absolute;
+  width: 91.2px;
+  height: 49.74px;
+  left: 1202px;
+  top: 1218.32px;
+  background: #000000;
+  border-radius: 16.5812px;
+  color: white;
+  top: 70%;
+  left: 70%;
+}
+
+.green {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  border-radius: 50%;
+  top: 70%;
+  left: 85%;
+}
+
+@media (min-width: 567px) {
+  .green {
+    top: 70%;
+    left: 83%;
+  }
+}
+@media (min-width: 567px) {
+  .green {
+    top: 70%;
+    left: 80%;
+  }
+  .chat {
+    top: 70%;
+    left: 70%;
+  }
+}
+@media (min-width: 992px) {
+  .green {
+    top: 70%;
+    left: 85%;
+  }
+}
+@media (min-width: 1200px) {
+  .green {
+    top: 70%;
+    left: 82%;
+  }
+}
+@media (min-width: 1400px) {
+  .green {
+    top: 70%;
+    left: 80%;
+  }
+}
+
+.order-sec {
+  padding: 1em 0;
+  max-width: 800px;
+  background-color: white;
+  outline: 1px solid #000000;
+  border-radius: 15px;
+}
+
+.order-logo {
+  max-width: 320px;
+}
+
+.order-success-logo {
+  max-width: 100px;
+}
+/* =============================Check out Ends ================================================================= */

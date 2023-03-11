@@ -143,24 +143,3 @@ subBtn.forEach((btn, i) => {
 });
 
 // ==========================================Cart Section  Ends=========================================
-
-// Payment Section Starts =========================================
-
-let mobileCloseBtn = document.querySelector(".mobile-close-btn");
-let desktopCloseBtn = document.querySelector(".desktop-close-btn");
-let paymentRow = document.querySelector(".checkout-row");
-
-function displayPayment() {
-  Body.classList.add("blur");
-  paymentRow.classList.add("show-payment");
-}
-
-mobileCloseBtn.onclick = () => {
-  Body.classList.remove("blur");
-  paymentRow.classList.remove("show-payment");
-};
-
-desktopCloseBtn.onclick = () => {
-  Body.classList.remove("blur");
-  paymentRow.classList.remove("show-payment");
-};

@@ -226,13 +226,15 @@ body {
 }
 
 .category-btn-dropdown div {
-  width: 300px;
   margin: 0.5em 0;
   padding: 0.32em;
   overflow: hidden !important;
 }
 
-.category-btn-dropdown div:hover {
+.category-btn-dropdown div div {
+  width: 300px;
+}
+.category-btn-dropdown div div:hover {
   outline: 1px solid var(--yellow-color);
 }
 
@@ -266,51 +268,45 @@ body {
   color: #ffd600;
 }
 
-.box1 {
-  display: flex;
-  width: 1130px;
-  height: 438px;
-  margin: 78px 155px;
-  justify-content: space-between;
+.img-container {
+  position: relative;
+  text-align: center;
+  border-radius: 20px;
+}
+.img-container div {
+  max-width: 400px;
+  height: 342.86px;
+  margin: 0 auto;
+  outline: 2px solid #d9d9d9;
+  border-radius: 20px;
 }
 
-.box {
-  width: 350px;
-  height: 438px;
-  background: #ffffff;
-  border: 3px solid #d9d9d9;
-  box-shadow: 0px 5px 10px #d9d9d9;
-  border-radius: 20px;
+.abc {
+  padding-bottom: 7rem !important;
+  border: 2px solid red;
 }
-.box img {
-  display: block;
-  margin: auto;
-  padding: 29px 25px;
-  width: 300px;
-  height: 342.86px;
-  background: url(500625003-removebg-preview.png);
-  border-radius: 20px;
-}
-.box p {
-  position: relative;
-  left: 57px;
-  top: 38px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px 7px;
-  width: 236px;
-  height: 96px;
+
+.img-cap {
+  position: absolute;
+  bottom: -15%;
+  left: 50%;
+  transform: translateX(-50%);
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 32px;
-  text-align: center;
-  background: #ffd600;
-  border-radius: 10.7705px;
+  background-color: var(--yellow-color);
   color: #000000;
+  border-radius: 10px;
+  width: 236px;
+  height: 96px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 /* ---------------------------------------------------Middle Part Style Ends--------------------------------------------------- */
 
 /* ---------------------------------------------------Footer --------------------------------------------------- */

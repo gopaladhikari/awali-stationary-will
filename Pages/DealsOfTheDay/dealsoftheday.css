@@ -160,13 +160,15 @@ body {
 }
 
 .category-btn-dropdown div {
-  width: 300px;
   margin: 0.5em 0;
   padding: 0.32em;
   overflow: hidden !important;
 }
 
-.category-btn-dropdown div:hover {
+.category-btn-dropdown div div {
+  width: 300px;
+}
+.category-btn-dropdown div div:hover {
   outline: 1px solid var(--yellow-color);
 }
 
@@ -289,6 +291,7 @@ swiper {
   transition: all 0.2s ease;
   margin-top: 0.8em;
 }
+
 .img-wrapper img:hover {
   scale: 0.95;
 }
