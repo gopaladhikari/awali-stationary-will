@@ -268,10 +268,15 @@ body {
   color: #ffd600;
 }
 
+.abc {
+  padding-bottom: 8rem;
+}
+
 .img-container {
   position: relative;
   text-align: center;
   border-radius: 20px;
+  margin-top: 7rem;
 }
 .img-container div {
   max-width: 400px;
@@ -279,6 +284,16 @@ body {
   margin: 0 auto;
   outline: 2px solid #d9d9d9;
   border-radius: 20px;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.img-container img {
+  transition: 300ms;
+}
+
+.img-container div:hover img {
+  scale: 0.95;
 }
 
 .img-cap {
