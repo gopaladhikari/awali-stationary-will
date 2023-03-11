@@ -2,9 +2,7 @@
   .category-list {
     display: none !important;
   }
-  .catalog .col-md-2 {
-    margin-right: 0px !important;
-  }
+
   .logo {
     margin-left: 15px;
   }
@@ -39,14 +37,6 @@
 
   .hurry-up {
     font-size: 20px;
-  }
-
-  .add-btn {
-    margin-left: 0rem;
-  }
-
-  .catalog .card {
-    width: 7rem;
   }
 
   .deals-of-the-week1 {
@@ -86,6 +76,10 @@
   .category-btn-dropdown {
     left: 3%;
   }
+
+  .catalog .card {
+    height: 23rem;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -97,10 +91,6 @@
 
   .clerical {
     font-size: 56px !important;
-  }
-
-  .catalog .card {
-    width: 10rem;
   }
 
   .hurry-up {
@@ -171,14 +161,6 @@
     font-size: 20px;
   }
 
-  .add-btn {
-    margin-left: 5.2rem;
-  }
-
-  .catalog .card {
-    width: 13rem;
-  }
-
   .deals-of-the-week1 img {
     width: 246px;
     height: 278px;
@@ -206,6 +188,10 @@
   .category-list {
     margin-left: -10rem !important;
   }
+
+  .catalog .card {
+    width: 18rem !important;
+  }
 }
 
 @media (min-width: 1300px) {
@@ -222,10 +208,6 @@
 
   .submit-btn {
     margin-right: 14rem !important;
-  }
-
-  .catalog .card {
-    width: 14rem;
   }
 
   .clerical {
