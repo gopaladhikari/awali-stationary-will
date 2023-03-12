@@ -15,6 +15,11 @@ font-family: 'Libre Bodoni', serif;
   box-sizing: border-box;
 }
 
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 :root {
   --yellow-color: #f0d028;
   --red-color: #f02828;
@@ -57,8 +62,15 @@ h6 {
   font-family: "Montserrat";
 }
 
+html {
+  width: 100vw;
+  overflow-x: hidden !important;
+  white-space: nowrap;
+}
 body {
-  background-color: var(--white-color);
+  width: 100vw;
+  overflow-x: hidden !important;
+  white-space: nowrap;
 }
 
 .row {
@@ -145,6 +157,10 @@ body {
 
 /* ---------------------------------------------------Category Style --------------------------------------------------- */
 
+.category-container {
+  width: 100vw;
+  overflow-x: hidden;
+}
 .category-btn {
   font-size: 11px;
   background-color: var(--black-color);
@@ -230,13 +246,11 @@ body {
 
 .hero-sec {
   max-width: 1496px;
-  height: 496px !important;
 }
-.hero-sec img {
+
+.hero-sec .carousel-item img {
   max-width: 1496px;
-  height: 496px !important;
-  border-radius: 22px;
-  object-fit: cover;
+  border-radius: 22px !important;
 }
 
 .clerical {
@@ -262,6 +276,7 @@ body {
 .carousel-item {
   position: relative;
   z-index: 2;
+  border-radius: 22px;
 }
 
 .carousel-control-prev {
@@ -455,7 +470,7 @@ body {
 
 /* ------------------------------------------------Office and School Ends------------------------------------------------ */
 
-/* ---------------------------------------------------Catalog Style--------------------------------------------------- */
+/* ---------------------------------------------------catalog Style--------------------------------------------------- */
 
 .card-title {
   font-size: 13px;
@@ -473,11 +488,16 @@ body {
 .catalog .card {
   position: relative;
   transition: 300ms ease;
-  overflow: hidden;
+  height: 16.5rem;
 }
 
 .catalog .card:hover {
   outline: 1px solid var(--yellow-color);
+}
+
+.catalog .card .card-img-top {
+  width: 100%;
+  height: 140px;
 }
 
 .add-btn {
@@ -504,9 +524,20 @@ body {
   cursor: pointer;
 }
 
-/* ---------------------------------------------------Catalog Style Ends--------------------------------------------------- */
+.catalog-md {
+  display: none;
+}
+
+.catalog-sm {
+  display: none;
+}
+
+/* ---------------------------------------------------catalog Style Ends--------------------------------------------------- */
 
 /* ---------------------------------------------------Deals of the week --------------------------------------------------- */
+.DOTW-mobile .card {
+  min-height: 16rem;
+}
 
 /* --------------------------------------------------Deals of the week Ends--------------------------------------------------- */
 
@@ -546,8 +577,12 @@ body {
 }
 
 .subscribe-for-the-news {
-  font-size: 24px;
+  font-size: 20px;
   margin-top: 1rem;
+}
+.last-para-mobile {
+  font-size: 14px;
+  text-align: center;
 }
 
 /* ---------------------------------------------------Image Overlay Ends--------------------------------------------------- */
