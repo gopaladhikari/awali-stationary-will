@@ -11,7 +11,10 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="./yourcart.css" />
     <link rel="stylesheet" href="./yourcart_responsive.css" />
   </head>
@@ -169,144 +172,35 @@
       <div class="container-fluid">
         <div class="row main mx-auto">
           <div class="col-12">
-            <h1 class="text-center py-5"><span class="y">Y</span>our Cart</h1>
+            <h1 class="text-center my-5" id="noItem">
+              <span class="y">Y</span>our Cart
+            </h1>
           </div>
-
-          <div class="col-12 overflow-scroll px-5">
-            <div class="d-flex heading-wrapper">
-              <div class="Item">
-                <h2>Item</h2>
-              </div>
-              <div class="Shipping text-center">
-                <h2>Shipping from</h2>
-              </div>
-              <div class="Quantity text-center">
-                <h2>Quantity</h2>
-              </div>
-              <div class="Shipping-cost text-center">
-                <h2>Shipping Cost</h2>
-              </div>
-              <div class="price text-center">
-                <h2>Price</h2>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="item-wrapper py-3 d-flex">
-                <div class="Item d-flex gap-3 align-items-center">
-                  <div>
-                    <img src="./Images/item.png" class="img-fluid" alt="" />
+          <div class="col-12">
+            <div class="row">
+              <div class="col-12 px-5">
+                <div class="d-flex pe-4 heading-wrapper">
+                  <div class="Item">
+                    <h2>Item</h2>
                   </div>
-                  <div>
-                    <h3>Product Name</h3>
-                    <p class="desc">Short description</p>
-                    <button class="remove">remove</button>
+                  <div class="Shipping text-center">
+                    <h2>Shipping from</h2>
                   </div>
-                </div>
-                <div class="Shipping">Mami</div>
-                <div class="Quantity d-flex gap-3 align-items-center">
-                  <button id="add" class="add">+</button>
-                  <input id="quantity" value="0" type="text" />
-                  <button id="sub" class="sub">-</button>
-                </div>
-                <div
-                  class="Shipping-cost d-flex flex-column align-items-center"
-                >
-                  <h4>Est. Shopping</h4>
-                  <h5 class="ship-price">$ 0</h5>
-                </div>
-                <div class="Price">
-                  <h6>$ 0</h6>
+                  <div class="Quantity text-center">
+                    <h2>Quantity</h2>
+                  </div>
+                  <div class="Shipping-cost text-center">
+                    <h2>Shipping Cost</h2>
+                  </div>
+                  <div class="price text-center">
+                    <h2>Price</h2>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-12">
-              <div class="item-wrapper py-3 d-flex">
-                <div class="Item d-flex gap-3 align-items-center">
-                  <div>
-                    <img src="./Images/item.png" class="img-fluid" alt="" />
-                  </div>
-                  <div>
-                    <h3>Product Name</h3>
-                    <p class="desc">Short description</p>
-                    <button class="remove">remove</button>
-                  </div>
-                </div>
-                <div class="Shipping">Mami</div>
-                <div class="Quantity d-flex gap-3 align-items-center">
-                  <button id="add" class="add">+</button>
-                  <input id="quantity" value="0" type="text" />
-                  <button id="sub" class="sub">-</button>
-                </div>
-                <div
-                  class="Shipping-cost d-flex flex-column align-items-center"
-                >
-                  <h4>Est. Shopping</h4>
-                  <h5 class="ship-price">$ 0</h5>
-                </div>
-                <div class="Price">
-                  <h6>$ 0</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="item-wrapper py-3 d-flex">
-                <div class="Item d-flex gap-3 align-items-center">
-                  <div>
-                    <img src="./Images/item.png" class="img-fluid" alt="" />
-                  </div>
-                  <div>
-                    <h3>Product Name</h3>
-                    <p class="desc">Short description</p>
-                    <button class="remove">remove</button>
-                  </div>
-                </div>
-                <div class="Shipping">Mami</div>
-                <div class="Quantity d-flex gap-3 align-items-center">
-                  <button id="add" class="add">+</button>
-                  <input id="quantity" value="0" type="text" />
-                  <button id="sub" class="sub">-</button>
-                </div>
-                <div
-                  class="Shipping-cost d-flex flex-column align-items-center"
-                >
-                  <h4>Est. Shopping</h4>
-                  <h5 class="ship-price">$ 0</h5>
-                </div>
-                <div class="Price">
-                  <h6>$ 0</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="item-wrapper py-3 d-flex">
-                <div class="Item d-flex gap-3 align-items-center">
-                  <div>
-                    <img src="./Images/item.png" class="img-fluid" alt="" />
-                  </div>
-                  <div>
-                    <h3>Product Name</h3>
-                    <p class="desc">Short description</p>
-                    <button class="remove">remove</button>
-                  </div>
-                </div>
-                <div class="Shipping">Mami</div>
-                <div class="Quantity d-flex gap-3 align-items-center">
-                  <button id="add" class="add">+</button>
-                  <input id="quantity" value="0" type="text" />
-                  <button id="sub" class="sub">-</button>
-                </div>
-                <div
-                  class="Shipping-cost d-flex flex-column align-items-center"
-                >
-                  <h4>Est. Shopping</h4>
-                  <h5 class="ship-price">$ 0</h5>
-                </div>
-                <div class="Price">
-                  <h6>$ 0</h6>
-                </div>
-              </div>
-              <hr />
-            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 px-5" id="main"></div>
           </div>
 
           <div class="col-12 d-flex justify-content-between align-items-center">
@@ -326,15 +220,15 @@
             <div class="col-md-3 py-5 subtotal-wrapper">
               <div class="d-flex justify-content-between">
                 <h4 class="mt-2">Subtotal :</h4>
-                <h2 class="subtotal">$ 0</h2>
+                <h2 id="subtotal" class="subtotal">$ 0</h2>
               </div>
               <div class="d-flex justify-content-between">
-                <h4 class="mt-2">Estimated shipping :</h4>
+                <h4 id="est-ship" class="mt-2">Estimated shipping :</h4>
                 <h2 class="estimated-shipping">$ 0</h2>
               </div>
               <div class="d-flex justify-content-between">
                 <h4 class="mt-2">Total :</h4>
-                <h2 class="total">$ 0</h2>
+                <h2 id="total" class="total">$ 0</h2>
               </div>
               <div class="text-center">
                 <button class="continue">
@@ -342,7 +236,6 @@
                     href="../Payment/payment.html"
                     type="button"
                     class="continue"
-                    onclick="displayPayment()"
                   >
                     Secure Checkout
                   </a>
@@ -622,5 +515,4 @@
   <script src="./yourcart.js"></script>
   <script src="../../src/data.js"></script>
   <script src="../../src/cart.js"></script>
-  <script src="../../src/cartItem.js"></script>
 </html>

@@ -71,6 +71,27 @@ body {
   z-index: 0;
 }
 
+.bi-cart-x-fill {
+  font-size: 180px;
+}
+.cart-icon {
+  background-color: #c5c3c6;
+  min-height: 55vh;
+}
+
+.hmp {
+  background-color: transparent;
+  border: none;
+  background-color: var(--yellow-color);
+  padding: 0.5em 1em;
+  border-radius: 15px;
+}
+
+.hmp a {
+  text-decoration: none;
+  color: black;
+}
+
 /* ---------------------------------------------------Navbar Style--------------------------------------------------- */
 
 .logo {
@@ -228,6 +249,7 @@ body {
 
 .heading-wrapper {
   border-bottom: 1px solid #9d9d9d;
+  margin-left: 0rem;
 }
 .desc {
   font-family: "Montserrat";
