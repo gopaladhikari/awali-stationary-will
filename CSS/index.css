@@ -149,9 +149,22 @@ body {
   text-align: center;
 }
 
-.white-circle {
-  margin-top: -13px;
-  margin-left: -10px;
+.cart-link {
+  position: relative;
+}
+
+.cart-amount {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 18px;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  align-items: center;
 }
 /* ---------------------------------------------------Navbar Style Ends--------------------------------------------------- */
 
@@ -425,28 +438,32 @@ body {
 /* ---------------------------------------------------Office and School--------------------------------------------------- */
 
 .school {
-  background: url(../Images/school.png);
-  background-size: cover;
-  max-width: 780px;
-  height: 335px;
+  background: url(../Images/school.png) no-repeat;
+  background-size: contain;
+  height: 235px;
+  border-radius: 30px;
+  position: relative;
 }
 
 .office {
-  max-width: 780px;
-  background: url(../Images/office.png);
-  background-size: cover;
-  height: 335px;
+  background: url(../Images/office.png) no-repeat;
+  background-size: contain;
+  height: 235px;
+  border-radius: 30px;
+  position: relative;
 }
 
 .office-btn {
-  width: 123.28px;
-  height: 42px;
+  position: absolute;
+  top: 20%;
+  left: 10%;
   background: #f0d028;
   border: none;
   color: white;
-  margin: 4rem 0rem 0 3rem;
   font-family: "Montserrat", sans-serif;
   transition: all 250ms ease-in;
+  border-radius: 8px;
+  padding: 0.3em 1.7em;
 }
 
 .office-btn:hover {
@@ -454,12 +471,14 @@ body {
 }
 
 .shop-now-btn {
+  top: 60%;
+  left: 10%;
+  position: absolute;
   color: white;
   padding: 4px 12px;
   background: #4f8bdb;
-  border-radius: 2px;
+  border-radius: 8px;
   border: none;
-  margin: 10rem 0rem 0 3rem;
   font-family: "Montserrat", sans-serif;
   transition: all 300ms ease-in;
 }
@@ -524,12 +543,12 @@ body {
   cursor: pointer;
 }
 
-.catalog-md {
+.catalog-sm {
   display: none;
 }
 
-.catalog-sm {
-  display: none;
+.catalog-md {
+  text-align: justify;
 }
 
 /* ---------------------------------------------------catalog Style Ends--------------------------------------------------- */

@@ -68,29 +68,19 @@
                     Ukraine
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./Pages/Wishlist/wishlist.html">
-                    <span><img src="./Images/heart.png" alt="" /></span>
-                    <span
-                      ><img
-                        src="./Images/white-circle.png"
-                        class="white-circle"
-                        alt=""
-                    /></span>
-                    Wishlist</a
-                  >
-                </li>
-                <li class="nav-item">
+                <li class="nav-item cart-link">
                   <a class="nav-link" href="./Pages/Yourcart/yourcart.html">
-                    <span><img src="./Images/cart.png" alt="" /></span>
-                    <span
-                      ><img
-                        src="./Images/white-circle.png"
-                        class="white-circle"
-                        alt=""
-                    /></span>
-                    Cart</a
-                  >
+                    <span><img src="./Images/cart.png " alt="" /></span>
+                    <div class="cart-amount"></div>
+                    <span class="ms-2">Whislist </span>
+                  </a>
+                </li>
+                <li class="nav-item cart-link">
+                  <a class="nav-link" href="./Pages/Yourcart/yourcart.html">
+                    <span><img src="./Images/cart.png " alt="" /></span>
+                    <div class="cart-amount" id="cartAmount"></div>
+                    <span class="ms-2">Cart </span>
+                  </a>
                 </li>
                 <li class="nav-item">
                   <button
@@ -98,7 +88,10 @@
                     id="userName"
                     onclick="dislayLogin()"
                   >
-                    <span><img src="./Images/login.png" alt="" /></span> Login
+                    <span class="me-2"
+                      ><img src="./Images/login.png" alt=""
+                    /></span>
+                    Login
                   </button>
                 </li>
               </ul>
@@ -361,7 +354,7 @@
       <!-- Office and School  -->
       <div class="container-fluid mt-4">
         <div class="row mx-auto">
-          <div class="col-lg-6 office mb-3 p-0">
+          <div class="col-sm-6 office ps-0">
             <div>
               <button class="office-btn">OFFICE</button>
             </div>
@@ -371,7 +364,7 @@
               </button>
             </div>
           </div>
-          <div class="col-lg-6 school mx-auto">
+          <div class="col-sm-6 school">
             <div>
               <button class="office-btn">SCHOOL</button>
             </div>
@@ -386,549 +379,21 @@
 
       <!-- Office and School Ends -->
       <!-- ================================================================================================================= -->
-
-      <!--  Catalog -->
-      <div class="container-fluid catalog catalog-mobile my-4 my-md-5">
-        <div class="row g-3 g-md-4 g-xl-5 mx-auto">
-          <div class="col-12 p-0" style="margin-bottom: -2rem">
-            <h1 class="mb-4 mb-xl-0">Catalog</h1>
-          </div>
-          <div class="col-6 p-0 col-md-4 col-xl-3">
-            <div class="card" style="max-width: 10rem">
-              <img
-                src="./Images/catalog1.png"
-                class="card-img-top img-fluid"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 p-0 col-md-4 d-flex justify-content-end col-xl-3">
-            <div class="card" style="max-width: 10rem">
-              <img
-                src="./Images/catalog2.png"
-                class="card-img-top img-fluid"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-6 p-0 col-md-4 d-xl-flex justify-content-end col-xl-3"
-          >
-            <div class="card" style="max-width: 10rem">
-              <img src="./Images/catalog3.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 p-0 col-md-4 d-flex justify-content-end col-xl-3">
-            <div class="card" style="max-width: 10rem">
-              <img src="./Images/catalog4.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 p-0 col-md-4 col-xl-3">
-            <div class="card" style="max-width: 10rem">
-              <img src="./Images/catalog5.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 p-0 col-md-4 d-flex justify-content-end col-xl-3">
-            <div class="card" style="max-width: 10rem">
-              <img src="./Images/catalog6.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-6 p-0 col-md-4 d-xl-flex justify-content-end col-xl-3"
-          >
-            <div class="card" style="max-width: 10rem">
-              <img src="./Images/catalog7.png" class="img-fluid" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 p-0 col-md-4 d-flex justify-content-end col-xl-3">
-            <div class="card" style="max-width: 10rem">
-              <img src="./Images/catalog8.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 p-0 col-md-4 col-xl-3">
-            <div class="card" style="max-width: 10rem">
-              <img src="./Images/catalog9.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 p-0 col-md-4 d-flex justify-content-end col-xl-3">
-            <div class="card" style="max-width: 10rem">
-              <img
-                src="./Images/catalog10.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 p-0 col-md-4 d-flex col-xl-3">
-            <div class="card" style="max-width: 10rem">
-              <img
-                src="./Images/catalog11.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 p-0 col-md-4 d-flex justify-content-end col-xl-3">
-            <div class="card" style="max-width: 10rem">
-              <img src="./Images/catalog1.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
+      <div class="container-fluid mt-4 mb-1">
+        <div class="row mx-auto">
+          <h1 class="p-0">Catalog</h1>
         </div>
       </div>
 
-      <div class="container-fluid catalog catalog-sm my-4 my-md-5">
-        <div class="row g-3 g-md-4 g-xl-5 mx-auto">
-          <div class="col-12 p-0" style="margin-bottom: -2rem">
-            <h1 class="mb-4 mb-xl-0">Catalog</h1>
-          </div>
-          <div class="col-6 p-0 col-sm-4 col-xl-3">
-            <div class="card" style="max-width: 10rem">
-              <img
-                src="./Images/catalog1.png"
-                class="card-img-top img-fluid"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-6 p-0 col-sm-4 d-flex justify-content-center col-xl-3"
-          >
-            <div class="card" style="max-width: 10rem">
-              <img
-                src="./Images/catalog2.png"
-                class="card-img-top img-fluid"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 p-0 col-sm-4 d-flex justify-content-end col-xl-3">
-            <div class="card" style="max-width: 10rem">
-              <img src="./Images/catalog3.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 p-0 col-sm-4 d-flex col-xl-3">
-            <div class="card" style="max-width: 10rem">
-              <img src="./Images/catalog4.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-6 p-0 col-sm-4 d-flex justify-content-center col-xl-3"
-          >
-            <div class="card" style="max-width: 10rem">
-              <img src="./Images/catalog5.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 p-0 col-sm-4 d-flex justify-content-end col-xl-3">
-            <div class="card" style="max-width: 10rem">
-              <img src="./Images/catalog6.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 p-0 col-sm-4 d-flex col-xl-3">
-            <div class="card" style="max-width: 10rem">
-              <img src="./Images/catalog7.png" class="img-fluid" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-6 p-0 col-sm-4 d-flex justify-content-center col-xl-3"
-          >
-            <div class="card" style="max-width: 10rem">
-              <img src="./Images/catalog8.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 p-0 col-sm-4 col-xl-3 d-flex justify-content-end">
-            <div class="card" style="max-width: 10rem">
-              <img src="./Images/catalog9.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 p-0 col-sm-4 d-flex col-xl-3">
-            <div class="card" style="max-width: 10rem">
-              <img
-                src="./Images/catalog10.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-6 p-0 col-sm-4 d-flex justify-content-center col-xl-3"
-          >
-            <div class="card" style="max-width: 10rem">
-              <img
-                src="./Images/catalog11.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-6 p-0 col-sm-4 d-flex justify-content-end col-xl-3">
-            <div class="card" style="max-width: 10rem">
-              <img src="./Images/catalog1.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container-fluid catalog-md my-4 my-md-5">
-        <div class="row g-3 g-md-4 g-xl-5 mx-auto">
-          <div class="col-12 p-0" style="margin-bottom: -2rem">
-            <h1 class="mb-4 mb-xl-0">Catalog</h1>
-          </div>
-          <div class="col-md-4 d-md-flex p-0 col-xl-3">
-            <div class="card" style="max-width: 18rem">
-              <img
-                src="./Images/catalog1.png"
-                class="card-img-top img-fluid"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="p-0 col-md-4 d-flex justify-content-center col-xl-3">
-            <div class="card" style="max-width: 18rem">
-              <img
-                src="./Images/catalog2.png"
-                class="card-img-top img-fluid"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-6 p-0 col-md-4 d-flex justify-content-center col-xl-3"
-          >
-            <div class="card" style="max-width: 18rem">
-              <img src="./Images/catalog3.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-6 p-0 col-md-4 d-flex justify-content-xl-end col-xl-3"
-          >
-            <div class="card" style="max-width: 18rem">
-              <img src="./Images/catalog4.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-6 p-0 col-md-4 d-flex justify-content-center justify-content-xl-start col-xl-3"
-          >
-            <div class="card" style="max-width: 18rem">
-              <img src="./Images/catalog5.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-6 p-0 col-md-4 d-flex justify-content-center col-xl-3"
-          >
-            <div class="card" style="max-width: 18rem">
-              <img src="./Images/catalog6.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-6 p-0 col-md-4 d-flex justify-content-xl-center col-xl-3"
-          >
-            <div class="card" style="max-width: 18rem">
-              <img src="./Images/catalog7.png" class="img-fluid" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-6 p-0 col-md-4 d-flex justify-content-center justify-content-xl-end col-xl-3"
-          >
-            <div class="card" style="max-width: 18rem">
-              <img src="./Images/catalog8.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-6 p-0 col-md-4 d-flex justify-content-md-center justify-content-xl-start col-xl-3 d-flex"
-          >
-            <div class="card" style="max-width: 18rem">
-              <img src="./Images/catalog9.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-6 p-0 col-md-4 d-flex justify-content-start justify-content-xl-center col-xl-3"
-          >
-            <div class="card" style="max-width: 18rem">
-              <img
-                src="./Images/catalog10.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-6 p-0 col-md-4 d-flex justify-content-center col-xl-3"
-          >
-            <div class="card" style="max-width: 18rem">
-              <img
-                src="./Images/catalog11.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-6 p-0 col-md-4 d-flex justify-content-center justify-content-xl-end col-xl-3"
-          >
-            <div class="card" style="max-width: 18rem">
-              <img src="./Images/catalog1.png" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="container-fluid catalog mb-5">
+        <div id="shop-item" class="row gy-5 mx-auto"></div>
       </div>
       <!-- Catalog Ends -->
 
       <!-- ================================================================================================================= -->
 
       <!-- Deals of the week secttion  -->
-      <div class="container-fluid my-4 DOTW-mobile">
+      <!-- <div class="container-fluid my-4">
         <div class="row g-4 mx-auto">
           <h1 class="p-0">Deals Of The Week</h1>
 
@@ -962,105 +427,8 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <div class="container-fluid DOTW-sm my-4">
-        <div class="row mx-auto">
-          <h1 class="p-0">Deals Of The Week</h1>
-
-          <div class="col-5 p-0 col-xl-3">
-            <div class="card h-100" style="max-width: 12rem">
-              <img
-                src="./Images/deals-of-the-week1.png"
-                class="card-img-top w-100 h-100"
-                alt="..."
-              />
-            </div>
-          </div>
-          <div class="col-7 p-0 d-flex gap-5">
-            <div class="card w-100" style="max-width: 12rem">
-              <img
-                src="./Images/deals-of-the-week2.png"
-                class="card-img-top w-100"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-            <div class="card w-100" style="max-width: 12rem">
-              <img
-                src="./Images/deals-of-the-week3.png"
-                class="card-img-top w-100"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container-fluid DOTW-md my-4">
-        <div class="row mx-auto">
-          <h1 class="p-0">Deals Of The Week</h1>
-          <div class="col-4 col-xl-3 p-0">
-            <div class="card w-100" style="max-width: 15rem">
-              <img
-                src="./Images/deals-of-the-week2.png"
-                class="card-img-top w-100"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-8 col-xl-6 p-0 d-flex justify-content-around">
-            <div class="card w-100" style="max-width: 15rem">
-              <img
-                src="./Images/deals-of-the-week2.png"
-                class="card-img-top w-100"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-            <div class="card w-100" style="max-width: 15rem">
-              <img
-                src="./Images/deals-of-the-week2.png"
-                class="card-img-top w-100"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Clerical GOODS</h5>
-                <p class="card-text">10.00$</p>
-                <button class="add-btn">
-                  <img src="./Images/cart.png" class="img-fluid" alt="" /> Add
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <!-- Deals of the week secttion Ends -->
 
       <!-- ================================================================================================================= -->
@@ -1374,6 +742,8 @@
     ></script>
 
     <script src="./index.js"></script>
+    <script src="./src/data.js"></script>
+    <script src="./src/shop.js"></script>
   </body>
 </html>
 <!-- --------------------------------------- -->

@@ -62,29 +62,19 @@
                     Ukraine
                   </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item cart-link">
                   <a class="nav-link" href="../Wishlist/wishlist.html">
-                    <span><img src="./Images/heart.png" alt="" /></span>
-                    <span
-                      ><img
-                        src="./Images/white-circle.png"
-                        class="white-circle"
-                        alt=""
-                    /></span>
-                    Wishlist</a
-                  >
+                    <span><img src="./Images/cart.png " alt="" /></span>
+                    <div class="cart-amount"></div>
+                    <span class="ms-2">Whislist </span>
+                  </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../Yourcart/yourcart.html">
-                    <span><img src="./Images/cart.png" alt="" /></span>
-                    <span
-                      ><img
-                        src="./Images/white-circle.png"
-                        class="white-circle"
-                        alt=""
-                    /></span>
-                    Cart</a
-                  >
+                <li class="nav-item cart-link">
+                  <a class="nav-link" href="./yourcart.html">
+                    <span><img src="./Images/cart.png " alt="" /></span>
+                    <div class="cart-amount" id="cartAmount"></div>
+                    <span class="ms-2">Cart </span>
+                  </a>
                 </li>
                 <li class="nav-item">
                   <button
@@ -630,4 +620,7 @@
     crossorigin="anonymous"
   ></script>
   <script src="./yourcart.js"></script>
+  <script src="../../src/data.js"></script>
+  <script src="../../src/cart.js"></script>
+  <script src="../../src/cartItem.js"></script>
 </html>

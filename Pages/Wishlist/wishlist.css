@@ -181,6 +181,24 @@ body {
   border-radius: 50%;
 }
 
+.cart-link {
+  position: relative;
+}
+
+.cart-amount {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 18px;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  align-items: center;
+}
+
 /* ---------------------------------------------------Navbar Style Ends--------------------------------------------------- */
 
 /* ---------------------------------------------------Category Style --------------------------------------------------- */
