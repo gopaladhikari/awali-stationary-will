@@ -1,0 +1,408 @@
+@media (max-width: 991px) {
+  .category-list {
+    display: none !important;
+  }
+
+  .logo {
+    margin-left: 15px;
+  }
+  .desktop-con-ship {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-nav {
+    margin-top: 10px;
+  }
+  .dropdown-menu {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .deals-pic {
+    margin-left: 0rem;
+  }
+  .DOTW-md {
+    display: none;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .card-images {
+    text-align: center;
+  }
+  .DOTW-sm {
+    display: none;
+  }
+  .last-para-sm {
+    display: none;
+  }
+  .catalog .card {
+    max-width: 9.5rem !important;
+  }
+  .office {
+    background-size: contain;
+    background-position: center;
+  }
+
+  .school {
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+@media (min-width: 577px) {
+  .catalog-mobile {
+    display: none;
+  }
+  .catalog-sm {
+    display: block;
+  }
+
+  .DOTW-mobile {
+    display: none;
+  }
+  .last-para-mobile {
+    display: none;
+  }
+  .checkout-logo img {
+    width: 100px;
+  }
+  .checkout-line {
+    width: 16%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .clerical {
+    font-size: 40px !important;
+  }
+
+  .hurry-up {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  .login {
+    font-size: 30px !important;
+  }
+
+  .login-email input::placeholder,
+  .login-password input::placeholder {
+    font-size: 16px;
+  }
+  .login-form-wrapper {
+    top: 4%;
+  }
+  .facebookandgoogle {
+    display: block !important;
+  }
+  .mobile_singin_option {
+    display: none !important;
+  }
+
+  .lines {
+    width: 240px;
+  }
+
+  .category-btn-dropdown {
+    left: 3%;
+  }
+
+  .catalog .card {
+    height: 323px !important;
+  }
+
+  .catalog-sm {
+    display: none;
+  }
+
+  .DOTW-sm {
+    display: none;
+  }
+
+  .catalog .card .card-img-top {
+    height: 200px;
+    width: 100%;
+  }
+  .office {
+    background-size: cover;
+    height: 235px;
+    background-position: center;
+  }
+
+  .school {
+    background-size: cover;
+    height: 235px;
+    background-position: center;
+  }
+  .checkout-logo img {
+    width: 130px;
+  }
+  .checkout-line {
+    margin-top: 0.5rem;
+    width: 25%;
+    height: 1px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .logo {
+    width: 265px;
+    height: 49px;
+  }
+
+  .clerical {
+    font-size: 56px !important;
+  }
+
+  .hurry-up {
+    font-size: 20px;
+  }
+
+  .add-btn {
+    margin-left: 2.56rem;
+  }
+
+  h4 {
+    font-size: 17px !important;
+  }
+
+  .login {
+    font-size: 40px !important;
+  }
+
+  .login-email input::placeholder,
+  .login-password input::placeholder {
+    font-size: 17px;
+  }
+
+  .login-form-wrapper {
+    top: 60%;
+  }
+
+  .logo {
+    margin-left: 15px;
+  }
+  .submit-btn {
+    margin-right: 2.8rem !important;
+  }
+
+  .category-btn-dropdown {
+    left: 2.5%;
+  }
+  .subscribe-for-the-news {
+    font-size: 24px;
+  }
+  .office {
+    background-size: cover;
+    height: 285px;
+    background-position: center;
+  }
+
+  .school {
+    background-size: cover;
+    height: 285px;
+    background-position: center;
+  }
+
+  .catalog .card .card-img-top {
+    height: 215px;
+  }
+  .catalog .card {
+    height: 340px !important;
+  }
+  .mobile-con-ship {
+    display: none;
+  }
+  .checkout-logo img {
+    width: 90px;
+  }
+  .checkout-line {
+    width: 10%;
+  }
+}
+
+/*  X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .form-control {
+    width: 350px;
+  }
+
+  .submit-btn {
+    margin-right: 3rem !important;
+  }
+
+  .nav-item {
+    margin: 0.32em;
+  }
+
+  .clerical {
+    font-size: 58px;
+  }
+
+  .hurry-up {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 18px !important;
+  }
+
+  .login {
+    font-size: 50px !important;
+  }
+
+  .login-email input::placeholder,
+  .login-password input::placeholder {
+    font-size: 18px;
+  }
+  .login-form-wrapper {
+    top: 6%;
+  }
+
+  .category-list {
+    margin-left: -10rem !important;
+  }
+
+  .catalog .card {
+    width: 18rem !important;
+  }
+
+  .catalog .card .card-img-top {
+    height: 237px;
+  }
+  .office {
+    height: 300px;
+  }
+
+  .school {
+    height: 300px;
+  }
+  .catalog .card {
+    height: 363px !important;
+  }
+  .checkout-logo img {
+    width: 110px;
+  }
+  .checkout-line {
+    width: 18%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .submit-btn {
+    margin-right: 6rem !important;
+  }
+}
+
+/*  XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .form-control {
+    width: 450px;
+  }
+
+  .submit-btn {
+    margin-right: 14rem !important;
+  }
+
+  .clerical {
+    font-size: 64px;
+  }
+
+  .hurry-up {
+    font-size: 20px;
+  }
+
+  .category-list {
+    margin-left: -19rem !important;
+  }
+  .category-btn-dropdown {
+    left: 2%;
+  }
+
+  #product-id-b .card,
+  #product-id-f .card,
+  #product-id-j .card {
+    margin-left: -3rem;
+  }
+  .office {
+    height: 350px;
+  }
+
+  .school {
+    height: 350px;
+  }
+  .catalog .card {
+    height: 368px !important;
+  }
+  .checkout-logo img {
+    width: 100%;
+  }
+  .checkout-line {
+    width: 22%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .category-btn-dropdown {
+    left: 2.5%;
+  }
+  .checkout-line {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .submit-btn {
+    margin-right: 18rem !important;
+  }
+  .logo {
+    margin-left: 70px;
+  }
+  .category-btn-dropdown {
+    left: 5%;
+  }
+}
+
+@media (min-width: 1700px) {
+  .logo {
+    margin-left: 6.5rem !important;
+  }
+  .category-list {
+    margin-left: -25rem !important;
+  }
+  .category-btn-dropdown {
+    left: 8%;
+  }
+}
+@media (min-width: 1800px) {
+  .submit-btn {
+    margin-right: 31.8rem !important;
+  }
+  .logo {
+    margin-left: 6.5rem !important;
+  }
+  .category-btn-dropdown {
+    left: 9%;
+  }
+}
+
+@media (min-width: 1900px) {
+  .submit-btn {
+    margin-right: 18.5rem !important;
+  }
+  .logo {
+    margin-left: 13rem !important;
+  }
+  .category-btn-dropdown {
+    left: 12%;
+  }
+}

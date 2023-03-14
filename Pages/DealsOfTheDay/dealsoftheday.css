@@ -146,7 +146,7 @@ body {
   padding: 0 0.32em;
   position: absolute;
   color: black;
-  top: 10rem;
+  top: 9rem;
   left: 5%;
   z-index: 10;
   background: white;
@@ -202,6 +202,25 @@ body {
 /* ---------------------------------------------------Navbar Style Ends--------------------------------------------------- */
 
 /* ---------------------------------------------------Category Style --------------------------------------------------- */
+
+.mobile-category ul {
+  padding: 0;
+  overflow: scroll;
+  gap: 14px;
+}
+
+.mobile-category ul li {
+  list-style-type: none;
+  padding: 14px 0;
+}
+
+.mobile-category ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 700;
+  gap: 4px;
+}
 
 .category-btn {
   font-size: 11px;
@@ -266,9 +285,8 @@ body {
 /* ---------------------------------------------------Category Style Ends--------------------------------------------------- */
 
 /* ---------------------------------------------------Swiper --------------------------------------------------- */
-swiper {
+.swiper {
   width: 100%;
-  height: 100%;
 }
 
 .swiper-slide {
@@ -282,15 +300,11 @@ swiper {
 
 .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 600px;
   object-fit: cover;
+  width: 100%;
   border-radius: 30px;
 }
 
-.swiper-pagination-bullet {
-  background-color: #ffd600 !important;
-}
 /* ---------------------------------------------------Swiper Ends--------------------------------------------------- */
 /* ---------------------------------------------------Main Section--------------------------------------------------- */
 

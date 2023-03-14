@@ -149,7 +149,7 @@ p {
   padding: 0 0.32em;
   position: absolute;
   color: black;
-  top: 10rem;
+  top: 9rem;
   left: 5%;
   z-index: 10;
   background: white;
@@ -205,6 +205,24 @@ p {
 /* ---------------------------------------------------Navbar Style Ends--------------------------------------------------- */
 
 /* ---------------------------------------------------Category Style --------------------------------------------------- */
+.mobile-category ul {
+  padding: 0;
+  overflow: scroll;
+  gap: 14px;
+}
+
+.mobile-category ul li {
+  list-style-type: none;
+  padding: 14px 0;
+}
+
+.mobile-category ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 700;
+  gap: 4px;
+}
 
 .category-btn {
   font-size: 11px;

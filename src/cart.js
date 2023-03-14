@@ -4,82 +4,10 @@ let basket = JSON.parse(localStorage.getItem("shopItem")) || [];
 
 const generateItem = () => {
   if (basket.length === 0) {
-    body.innerHTML = `
-    <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../../index.html"
-          ><img src="Images/logo.png" class="img-fluid logo" alt="logo"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <form class="d-flex">
-                <input
-                  class="form-control"
-                  type="search"
-                  placeholder="Search Here"
-                  aria-label="Search"
-                />
-                <button class="submit-btn p-0 m-0" type="submit">
-                  Submit
-                </button>
-              </form>
-            </li>
-            <li class="nav-item dropdown mt-2 mt-lg-0">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Ukraine
-              </a>
-            </li>
-            <li class="nav-item cart-link">
-              <a class="nav-link" href="../Wishlist/wishlist.html">
-                <span><img src="./Images/cart.png " alt="" /></span>
-                <div class="cart-amount"></div>
-                <span class="ms-2">Whislist </span>
-              </a>
-            </li>
-            <li class="nav-item cart-link">
-              <a class="nav-link" href="./yourcart.html">
-                <span><img src="./Images/cart.png " alt="" /></span>
-                <div class="cart-amount" id="cartAmount">0</div>
-                <span class="ms-2">Cart </span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <button
-                class="nav-link nav-login"
-                id="userName"
-                onclick="dislayLogin()"
-              >
-                <span><img src="./Images/login.png" alt="" /></span> Login
-              </button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-    <div class="container-fluid p-0">
-    <div class="col-12">
-      <div class="cart-icon px-4 d-flex justify-content-center align-items-center flex-column text-center">
+    document.querySelector("#notg").style.display = "none";
+    main.innerHTML = `
+    <div class="col-12 w-100 p-0">
+      <div class="cart-icon w-100 px-4 d-flex justify-content-center align-items-center flex-column text-center">
         <i class="bi bi-cart-x-fill"></i>
         <h5>Your cart is empty</h5>
         <h2>It's look like you haven't added anything to your cart.</h2>
@@ -88,62 +16,7 @@ const generateItem = () => {
         </button>
       </div>
     </div>
-  </div>
-  <div class="container-fluid mt-5">
-  <div class="row mx-auto">
-    <div class="col-6 col-lg-4 mt-5 p-0">
-      <img src="./Images/footer-logo.png" class="img-fluid mt-4" alt="" />
-    </div>
-    <div class="col-6 col-lg-2">
-      <ul class="list-group">
-        <li class="list-group-item">GOODS</li>
-        <li class="list-group-item mt-4">
-          Promotions and discounts on stationery
-        </li>
-        <li class="list-group-item">Novelties of the office</li>
-        <li class="list-group-item">Sales leaders</li>
-      </ul>
-    </div>
-    <div class="col-6 col-lg-2">
-      <ul class="list-group">
-        <li class="list-group-item">INFORMATION</li>
-        <li class="list-group-item mt-4">Payment and delivery</li>
-        <li class="list-group-item">User agreement</li>
-      </ul>
-    </div>
-    <div class="col-6 col-lg-2">
-      <ul class="list-group">
-        <li class="list-group-item">YOUR PROFILE</li>
-        <li class="list-group-item mt-4">Personal data</li>
-        <li class="list-group-item">order</li>
-        <li class="list-group-item">add btnresses</li>
-        <li class="list-group-item">Coupons</li>
-      </ul>
-    </div>
-    <div
-      class="col-6 col-lg-2 d-flex mt-5 p-0 ms-5 ms-md-0 justify-content-end"
-    >
-      <img
-        src="./Images/play-store.png"
-        class="img-fluid play-store mt-4"
-        alt=""
-      />
-      <img
-        src="./Images/apple-store.png"
-        class="img-fluid play-store mt-4"
-        alt=""
-      />
-    </div>
-  </div>
-</div>
-<hr />
-
-<div class="p-2">
-  <p class="text-center footer-text">
-    &copy; Copyright Awali Starionary WLL 2023. All rights reserved.
-  </p>
-</div>
-          `;
+ `;
   } else if (window.innerWidth > 992) {
     main.innerHTML = basket
       .map((x) => {
@@ -161,7 +34,7 @@ const generateItem = () => {
                  <div>
                   <h3>${title}</h3>
                     <p class="desc">$ ${text}.00</p>
-                    <button onclick="itemRemove(${id})" class="remove">remove</button>
+                    <button onclick="itemRemove(${id})" class="remove">Remove</button>
                   </div>
              </div>
               <div class="Shipping">Mami</div>
@@ -205,7 +78,6 @@ const generateItem = () => {
           >
             <h2>${title}</h2>
             <h2>$ ${text}.00</h2>
-            <button onclick="itemRemove(${id})" class="remove">Remove</button>
             <h3>Est Shipping price : $ ${shippingPrice}.00</h3>
             <div class="d-flex w-100  align-items-center justify-content-between">
               <h2 class="">$ ${price * item}.00</h2>
@@ -258,6 +130,7 @@ const decrement = (id) => {
   basket = basket.filter((x) => x.item !== 0);
   generateItem();
   localStorage.setItem("shopItem", JSON.stringify(basket));
+  calculation();
   update(id.id);
   updatePrice();
 };
@@ -265,7 +138,6 @@ const decrement = (id) => {
 const update = (id) => {
   let search = basket.find((item) => id === item.id);
   document.getElementById(id).innerHTML = search.item;
-  generateItem();
   calculation();
   updatePrice();
 };
@@ -288,10 +160,9 @@ const updatePrice = () => {
 updatePrice();
 
 const itemRemove = (id) => {
-  alert();
   basket = basket.filter((x) => x.id !== id.id);
-  calculation();
-  generateItem();
-  updatePrice();
   localStorage.setItem("shopItem", JSON.stringify(basket));
+  generateItem();
+  calculation();
+  updatePrice();
 };

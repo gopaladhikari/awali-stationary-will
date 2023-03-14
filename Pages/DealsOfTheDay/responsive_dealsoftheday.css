@@ -19,6 +19,33 @@
   .card-images {
     text-align: center;
   }
+  .swiper {
+    width: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+  }
+  h1 {
+    font-size: 32px;
+  }
+
+  .swiper-slide img {
+    /* width: 100%; */
+    object-fit: contain;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: #ffd600 !important;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
