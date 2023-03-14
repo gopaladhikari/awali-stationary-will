@@ -97,3 +97,9 @@ reistrationForm.onsubmit = (event) => {
   }
 };
 // ================Form Validation Ends =================
+const categoryBtn = document.querySelector(".category-btn");
+const categoryDropdown = document.querySelector(".category-btn-dropdown");
+
+categoryBtn.onclick = () => {
+  categoryDropdown.classList.toggle("show-dropdown");
+};

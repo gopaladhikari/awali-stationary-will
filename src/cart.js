@@ -1,5 +1,5 @@
 let main = document.getElementById("main");
-
+let mobileCart = document.getElementById("mobile-cart");
 let basket = JSON.parse(localStorage.getItem("shopItem")) || [];
 
 const generateItem = () => {
@@ -59,7 +59,7 @@ const generateItem = () => {
             <li class="nav-item cart-link">
               <a class="nav-link" href="./yourcart.html">
                 <span><img src="./Images/cart.png " alt="" /></span>
-                <div class="cart-amount" id="cartAmount"></div>
+                <div class="cart-amount" id="cartAmount">0</div>
                 <span class="ms-2">Cart </span>
               </a>
             </li>
@@ -79,7 +79,7 @@ const generateItem = () => {
   </header>
     <div class="container-fluid p-0">
     <div class="col-12">
-      <div class="cart-icon px-4 d-flex justify-content-center align-items-center flex-column ">
+      <div class="cart-icon px-4 d-flex justify-content-center align-items-center flex-column text-center">
         <i class="bi bi-cart-x-fill"></i>
         <h5>Your cart is empty</h5>
         <h2>It's look like you haven't added anything to your cart.</h2>
@@ -144,43 +144,80 @@ const generateItem = () => {
   </p>
 </div>
           `;
-  } else {
+  } else if (window.innerWidth > 992) {
     main.innerHTML = basket
       .map((x) => {
         const { id, item } = x;
         let search = shopItemData.find((y) => y.id === id);
         const { img, title, text, shippingPrice, price } = search;
         return `
-        <div class="col-12">
-        <div class="item-wrapper py-3 d-flex">
-          <div class="Item d-flex gap-3 align-items-center">
-            <div>
-              <img style="max-width:150px" src= "../.${img}" class="img-fluid" alt="" />
+          <div class="col-12">
+          <div class="row">
+            <div class="item-wrapper py-3 d-flex">
+              <div class="Item d-flex gap-3 align-items-center">
+                <div>
+                <img style="max-width:150px" src= "../.${img}" class="img-fluid" alt="" />
+                </div>
+                 <div>
+                  <h3>${title}</h3>
+                    <p class="desc">$ ${text}.00</p>
+                    <button onclick="itemRemove(${id})" class="remove">remove</button>
+                  </div>
+             </div>
+              <div class="Shipping">Mami</div>
+            <div class="Quantity d-flex gap-3 align-items-center">
+              <button onclick="increment(${id})" id="add" class="add">+</button>
+              <h2 id="${id}" class="mt-2"> ${item} </h2>
+              <button onclick="decrement(${id})" id="sub" class="sub">-</button>
             </div>
-            <div>
-              <h3>${title}</h3>
-              <p class="desc">$ ${text}.00</p>
-              <button class="remove">remove</button>
+            <div
+              class="Shipping-cost d-flex flex-column align-items-center"
+            >
+              <h4>Est. Shopping</h4>
+              <h5 class="ship-price">$ ${shippingPrice}</h5>
             </div>
-          </div>
-          <div class="Shipping">Mami</div>
-          <div class="Quantity d-flex gap-3 align-items-center">
-            <button onclick="increment(${id})" id="add" class="add">+</button>
-            <h2 id="${id}" class="mt-2"> ${item} </h2>
-            <button onclick="decrement(${id})" id="sub" class="sub">-</button>
-          </div>
-          <div
-            class="Shipping-cost d-flex flex-column align-items-center"
-          >
-            <h4>Est. Shopping</h4>
-            <h5 class="ship-price">$ ${shippingPrice}</h5>
-          </div>
-          <div class="Price">
-            <h6>$ ${price * item}.00</h6>
+            <div class="Price">
+              <h6>$ ${price * item}.00</h6>
+            </div>
+            </div>
           </div>
         </div>
-      </div>
         `;
+      })
+      .join("");
+  } else {
+    mobileCart.innerHTML = basket
+      .map((x) => {
+        const { id, item } = x;
+        let search = shopItemData.find((y) => y.id === id);
+        const { img, title, text, shippingPrice, price } = search;
+        return `
+        <div class="col-12 mobile--yourcart col-md-6 d-flex gap-2 my-4">
+          <div class="d-flex">
+            <img
+              style="max-width: 130px"
+              src="../.${img}"
+              alt=""
+            />
+          </div>
+          <div
+            class="d-flex align-items-start w-100 flex-column"
+          >
+            <h2>${title}</h2>
+            <h2>$ ${text}.00</h2>
+            <button onclick="itemRemove(${id})" class="remove">Remove</button>
+            <h3>Est Shipping price : $ ${shippingPrice}.00</h3>
+            <div class="d-flex w-100  align-items-center justify-content-between">
+              <h2 class="">$ ${price * item}.00</h2>
+              <div class="Quantity d-flex gap-2 ">
+                <button  onclick="increment(${id})" id="add" class="add">+</button>
+                <h2 class="quantity mt-2" id="${id}" class="mt-2">${item}</h2>
+                <button onclick="decrement(${id})" id="sub" class="sub">-</button>
+              </div>
+            </div>
+          </div>
+    </div>
+      `;
       })
       .join("");
   }
@@ -205,6 +242,8 @@ const increment = (id) => {
       item: 1,
     });
   } else search.item += 1;
+  update(id.id);
+
   updatePrice();
   generateItem();
   localStorage.setItem("shopItem", JSON.stringify(basket));
@@ -216,16 +255,17 @@ const decrement = (id) => {
   if (search.item === 0) return;
   else if (search === undefined) return;
   else search.item -= 1;
-  update(id.id);
   basket = basket.filter((x) => x.item !== 0);
   generateItem();
-  updatePrice();
   localStorage.setItem("shopItem", JSON.stringify(basket));
+  update(id.id);
+  updatePrice();
 };
 
 const update = (id) => {
   let search = basket.find((item) => id === item.id);
   document.getElementById(id).innerHTML = search.item;
+  generateItem();
   calculation();
   updatePrice();
 };
@@ -235,9 +275,23 @@ const updatePrice = () => {
   let estShipPrice = document.getElementById("est-ship");
   let total = document.getElementById("total");
 
-  subTotal.innerHTML =
-    "$ " + basket.map((x) => x.item).reduce((x, y) => x + y, 0) * 2160 + ".00";
+  let subttl = basket.map((x) => x.item).reduce((x, y) => x + y, 0) * 2160;
+  let estP = basket.map((x) => x.item).reduce((x, y) => x + y, 0) * 15;
+
+  estShipPrice.innerHTML = `$ ${estP}.00 `;
+
+  subTotal.innerHTML = subttl;
+  total.innerHTML = `$ ${estP + subttl}`;
   generateItem();
 };
 
 updatePrice();
+
+const itemRemove = (id) => {
+  alert();
+  basket = basket.filter((x) => x.id !== id.id);
+  calculation();
+  generateItem();
+  updatePrice();
+  localStorage.setItem("shopItem", JSON.stringify(basket));
+};
