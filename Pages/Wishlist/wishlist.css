@@ -364,7 +364,14 @@ body {
 .right-card {
   background-color: transparent;
   border: none;
+
   outline: none;
+}
+
+.right-card li,
+.left-card li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
 }
 
 /* ---------------------------------------------------Wishlist Ends--------------------------------------------------- */
