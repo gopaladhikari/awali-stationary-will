@@ -224,6 +224,11 @@ p {
   gap: 4px;
 }
 
+.about {
+  padding-bottom: 3px;
+  border-bottom: 3px solid var(--yellow-color);
+}
+
 .category-btn {
   font-size: 11px;
   background-color: var(--black-color);

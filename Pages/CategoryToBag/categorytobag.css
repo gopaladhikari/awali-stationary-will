@@ -249,6 +249,10 @@ body {
   font-size: 12px;
   font-weight: 600;
 }
+.cob {
+  padding-bottom: 3px;
+  border-bottom: 3px solid var(--yellow-color);
+}
 
 .category-list li a {
   position: relative;

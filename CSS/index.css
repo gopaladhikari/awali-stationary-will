@@ -180,6 +180,11 @@ body {
   padding: 12px 0;
 }
 
+.home {
+  padding-bottom: 3px;
+  border-bottom: 3px solid var(--yellow-color);
+}
+
 .mobile-category ul li a {
   text-decoration: none;
   color: #000000;

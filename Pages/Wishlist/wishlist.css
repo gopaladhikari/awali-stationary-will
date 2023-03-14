@@ -60,9 +60,14 @@ h6 {
 body {
   background-color: var(--white-color);
 }
-
+.y {
+  color: var(--yellow-color);
+}
 .row {
   max-width: 1496px;
+}
+.newrow {
+  max-width: 1900px !important;
 }
 
 .blur {
@@ -343,18 +348,23 @@ body {
   border-top: 1px solid #d9d9d9;
 }
 
-.catalog .card {
-  width: 10rem;
-  transition: all 200ms ease;
-  overflow: hidden;
-}
-
 .card .card-img-top {
   cursor: pointer;
 }
 
 .catalog .card:hover {
   border: 1px solid var(--yellow-color);
+}
+.left-card {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.right-card {
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 
 /* ---------------------------------------------------Wishlist Ends--------------------------------------------------- */

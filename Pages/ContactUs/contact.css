@@ -238,6 +238,10 @@ body {
   font-weight: 700;
   gap: 4px;
 }
+.con-us {
+  padding-bottom: 3px;
+  border-bottom: 3px solid var(--yellow-color);
+}
 
 .category-btn {
   font-size: 11px;

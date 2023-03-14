@@ -167,6 +167,10 @@ body {
   overflow: scroll;
   gap: 14px;
 }
+.desk-essen {
+  padding-bottom: 3px;
+  border-bottom: 3px solid var(--yellow-color);
+}
 
 .mobile-category ul li {
   list-style-type: none;
