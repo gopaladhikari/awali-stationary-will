@@ -104,3 +104,7 @@ const categoryDropdown = document.querySelector(".category-btn-dropdown");
 categoryBtn.onclick = () => {
   categoryDropdown.classList.toggle("show-dropdown");
 };
+
+const insertSubCategory = () => {
+  alert();
+};
